@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isa Hernandez Photo & Makeup LLC | Fotografía & Maquillaje · Phoenix, AZ</title>
+  <meta name="description" content="Estudio de fotografía y maquillaje profesional en Phoenix, Arizona. Retratos, parejas, bodas, quinceañeras, cumpleaños y eventos.">
+    <!-- Official Brand Favicon (Camera Eye Isotype) -->
+  <link rel="shortcut icon" href="favicon.ico?v=5">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/brand-icon-32.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/brand-icon-16.png?v=5">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/brand-icon.png?v=5">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/brand-touch-icon.png?v=5">
+  <link rel="icon" type="image/svg+xml" href="images/brand-icon.svg?v=5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Site Header (Official Logo Up Top) -->
+  <header class="site-header">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Official Brand Logo -->
+        <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+          <img src="images/logo.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img logo-dark">
+          <img src="images/logo-white.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img logo-white">
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link active" data-i18n="nav_home">INICIO</a>
+          <a href="about.html" class="nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+          <a href="services.html" class="nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+          <a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">PORTAFOLIO</a>
+          <a href="#testimonials" class="nav-link" data-i18n="nav_reviews">RESEÑAS</a>
+          <a href="policies.html" class="nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+          <a href="faq.html" class="nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav_contact">CONTACTO</a>
+        
+        </nav>
+
+        <!-- Header Actions: Lang Switch, IG, Book Button -->
+        <div class="nav-actions">
+
+          
+          <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="nav-social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="booking.html" class="btn btn-primary header-book-btn" data-i18n="btn_book_header">RESERVAR CITA</a>
+
+          <button class="mobile-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+            <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+        <img src="images/logo.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img logo-dark">
+      </a>
+      <button class="mobile-drawer-close" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link active" data-i18n="nav_home">INICIO</a>
+      <a href="about.html" class="mobile-nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+      <a href="services.html" class="mobile-nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+      <a href="portfolio.html" class="mobile-nav-link" data-i18n="nav_portfolio">PORTAFOLIO</a>
+      <a href="#testimonials" class="mobile-nav-link" data-i18n="nav_reviews">RESEÑAS</a>
+      <a href="policies.html" class="mobile-nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+      <a href="faq.html" class="mobile-nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">CONTACTO</a>
+      <a href="booking.html" class="mobile-nav-link" style="color: var(--text-dark); font-weight: 700;" data-i18n="nav_booking">RESERVAR CITA</a>
+    </div>
+    <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem; margin-top: auto;">
+      <div class="mobile-drawer-lang">
+        <button class="lang-btn active" data-lang="es">ESPAÑOL</button>
+        <button class="lang-btn" data-lang="en">ENGLISH</button>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block" style="margin-bottom: 0.8rem;" data-i18n="btn_book_header">RESERVAR CITA</a>
+      <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; letter-spacing: 0.15em;">PHOENIX, AZ · @isahphotographer</p>
+    </div>
+  </aside>
+
+  <!-- 1. HERO SECTION WITH BACKGROUND SLIDESHOW -->
+  <section class="hero-editorial">
+    <!-- Slideshow Background Container -->
+    <div class="hero-slideshow-container">
+      <div class="hero-slide active" style="background-image: url('images/hero.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-2.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-3.jpg');"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-4.jpg');"></div>
+      <div class="hero-slide-overlay"></div>
+    </div>
+
+    <!-- Hero Slide Dots Indicator -->
+    <div class="hero-slide-dots">
+      <div class="hero-dot active" title="Slide 1"></div>
+      <div class="hero-dot" title="Slide 2"></div>
+      <div class="hero-dot" title="Slide 3"></div>
+      <div class="hero-dot" title="Slide 4"></div>
+    </div>
+
+    <!-- Hero Content -->
+    <div class="container">
+      <div class="hero-content reveal">
+        <span class="hero-kicker" data-i18n="hero_kicker">FOTOGRAFÍA · MAQUILLAJE · HISTORIAS REALES</span>
+        <h1 class="hero-title" data-i18n="hero_title">Capturando tus momentos más especiales</h1>
+        <span class="hero-script-accent" data-i18n="hero_script">con arte, emoción y autenticidad</span>
+        <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+          <a href="portfolio.html" class="btn btn-outline-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_view_work">VER PORTAFOLIO</span>
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="booking.html" class="btn btn-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_book_session">RESERVAR SESIÓN</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll-indicator">
+      <span data-i18n="scroll_text">DESLIZA</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- 2. INTRO / ABOUT ISA -->
+  <section class="section-pad bg-sand-tint">
+    <div class="container">
+      <div class="intro-grid">
+        <!-- Left: Clean Polaroid Cards -->
+        <div class="polaroid-collage reveal-left">
+          <div class="polaroid-main">
+            <img src="images/isa-index2.jpg" alt="Isabela Hernandez - Fotógrafa y Maquillista">
+          </div>
+          <div class="polaroid-secondary">
+            <img src="images/isa-index.jpg" alt="Especialida en Fotografia Familiar">
+          </div>
+          <div class="polaroid-tertiary">
+            <img src="images/isa-index3.jpg" alt="Me encuentras en Phoenix, Az">
+          </div>
+        </div>
+
+        <!-- Right: Clean Bio Content -->
+        <div class="intro-bio-content reveal-right">
+          <span class="section-kicker" data-i18n="about_kicker">SOBRE MÍ</span>
+          <h2 class="intro-author-name">Isa Hernandez</h2>
+          <span class="intro-author-sub" data-i18n="about_subtitle">PHOTO & MAKE UP · PHOENIX, AZ</span>
+          <p class="intro-bio-text" data-i18n="about_bio">
+            Soy Isa, fotógrafa y maquillista apasionada por capturar la belleza en todas sus formas. Me encanta ayudar a las personas a sentirse seguras, cómodas y auténticas, ya sea frente a la cámara o con un maquillaje que realce su esencia.
+          </p>
+          <div>
+            <span class="script-signature" data-i18n="about_quote">Más que fotos, son recuerdos.</span>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="about.html" class="btn btn-outline">
+              <span data-i18n="btn_more_about">CONOCE MÁS SOBRE ISA</span>
+              <span class="btn-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. SERVICES STRIP (Airy & Clean) -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="services_kicker">MIS SERVICIOS</span>
+        <h2 class="section-title" data-i18n="services_title">Fotografía & Maquillaje</h2>
+        <p class="section-subtitle" data-i18n="services_subtitle">
+          Desde retratos íntimos hasta celebraciones memorables en Phoenix y todo Arizona.
+        </p>
+      </div>
+
+      <!-- 6-Icon Grid -->
+      <div class="services-strip reveal-zoom">
+        <a href="services.html#portraits" class="service-strip-item">
+          <i class="fa-solid fa-camera-retro service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_portraits">RETRATOS</span>
+        </a>
+
+        <a href="services.html#couples" class="service-strip-item">
+          <i class="fa-solid fa-user-group service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_couples">PAREJAS</span>
+        </a>
+
+        <a href="services.html#weddings" class="service-strip-item">
+          <i class="fa-solid fa-ring service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_weddings">BODAS</span>
+        </a>
+
+        <a href="services.html#milestones" class="service-strip-item">
+          <i class="fa-solid fa-wand-magic-sparkles service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_quince">QUINCEAÑERAS</span>
+        </a>
+
+        <a href="services.html#events" class="service-strip-item">
+          <i class="fa-solid fa-users service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_events">EVENTOS</span>
+        </a>
+
+        <a href="services.html#makeup" class="service-strip-item">
+          <i class="fa-solid fa-paintbrush service-strip-icon-fa"></i>
+          <span class="service-strip-name" data-i18n="srv_makeup">MAQUILLAJE & PEINADO</span>
+        </a>
+      </div>
+
+      <div style="text-align: center;" class="reveal">
+        <a href="services.html" class="btn btn-outline">
+          <span data-i18n="btn_all_services">VER LISTA COMPLETA DE PRECIOS</span>
+          <span class="btn-arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. PORTFOLIO FEATURED -->
+  <section class="section-pad bg-sand-tint" id="portfolio">
+    <div class="container">
+      <div class="editorial-gallery-layout">
+        <!-- Left: Info & Link -->
+        <div class="editorial-gallery-info reveal-left">
+          <span class="section-kicker" data-i18n="port_kicker">PORTAFOLIO</span>
+          <h2 class="section-title" data-i18n="port_title">Momentos que cuentan historias</h2>
+          <p class="section-subtitle" data-i18n="port_subtitle" style="margin-bottom: 2.2rem;">
+            Cada sesión es única y cada imagen tiene un propósito. Aquí puedes apreciar una selección de mi trabajo.
+          </p>
+          <a href="portfolio.html" class="btn btn-outline">
+            <span data-i18n="btn_view_gallery">VER GALERÍA COMPLETA</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <!-- Right: Asymmetric Editorial Grid -->
+        <div class="editorial-gallery-grid reveal-right">
+          <div class="editorial-col-tall">
+            <img src="images/gallery/wedding-1.jpg" alt="Retrato Nupcial y Amor en Pareja" loading="lazy">
+          </div>
+          <div class="editorial-col-stack">
+            <img src="images/gallery/makeup-1.jpg" alt="Maquillaje Social Glamour & Peinado" loading="lazy">
+            <img src="images/gallery/bday-1.jpg" alt="Celebración de Cumpleaños Glamour 30" loading="lazy">
+          </div>
+          <div class="editorial-col-tall">
+            <img src="images/gallery/portrait-9.jpg" alt="Graduación Universitaria ASU · TRIO Alumnus" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. THE ISA HERNANDEZ EXPERIENCE -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="exp_kicker">THE ISA HERNANDEZ EXPERIENCE</span>
+        <h2 class="section-title" data-i18n="exp_title">Un Proceso Diseñado Para Ti</h2>
+        <p class="section-subtitle" data-i18n="exp_subtitle">
+          Desde el primer contacto hasta la entrega de tu galería privada, cada detalle está pensado para tu tranquilidad.
+        </p>
+      </div>
+
+      <div class="experience-timeline">
+        <div class="experience-step reveal delay-1">
+          <div class="step-number">01</div>
+          <h4 class="step-title" data-i18n="step1_title">01 — CONECTAR</h4>
+          <p class="step-desc" data-i18n="step1_desc">Platícame tu visión, la fecha que deseas y el estilo que imaginas.</p>
+        </div>
+
+        <div class="experience-step reveal delay-2">
+          <div class="step-number">02</div>
+          <h4 class="step-title" data-i18n="step2_title">02 — PLANIFICAR</h4>
+          <p class="step-desc" data-i18n="step2_desc">Definimos la locación, moodboard personalizado y guía de vestuario.</p>
+        </div>
+
+        <div class="experience-step reveal delay-3">
+          <div class="step-number">03</div>
+          <h4 class="step-title" data-i18n="step3_title">03 — CREAR</h4>
+          <p class="step-desc" data-i18n="step3_desc">Sesión relajada con dirección de poses y estilismo de maquillaje profesional.</p>
+        </div>
+
+        <div class="experience-step reveal delay-4">
+          <div class="step-number">04</div>
+          <h4 class="step-title" data-i18n="step4_title">04 — RECIBIR</h4>
+          <p class="step-desc" data-i18n="step4_desc">Entrega de tus fotos en alta resolución en tu galería privada protegida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHAT'S INCLUDED -->
+  <section class="section-pad bg-sand-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="inc_kicker">LO QUE INCLUYE</span>
+        <h2 class="section-title" data-i18n="inc_title">Calidad & Dedicación en Cada Sesión</h2>
+        <p class="section-subtitle" data-i18n="inc_subtitle">Un servicio completo donde no tienes que preocuparte por nada.</p>
+      </div>
+
+      <div class="inclusions-grid">
+        <div class="inclusion-card reveal delay-1">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-comments"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_1">Consulta previa & Asesoría personalizada</span>
+        </div>
+        <div class="inclusion-card reveal delay-2">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_2">Planificación de concepto & Moodboard</span>
+        </div>
+        <div class="inclusion-card reveal delay-3">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-shirt"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_3">Guía de vestuario & Paleta de color</span>
+        </div>
+        <div class="inclusion-card reveal delay-4">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-person-walking"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_4">Dirección de poses paso a paso</span>
+        </div>
+        <div class="inclusion-card reveal delay-1">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_5">Edición profesional minimalista</span>
+        </div>
+        <div class="inclusion-card reveal delay-2">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_6">Retoque natural de piel</span>
+        </div>
+        <div class="inclusion-card reveal delay-3">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-images"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_7">Galería privada en línea (Pixieset)</span>
+        </div>
+        <div class="inclusion-card reveal delay-4">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-cloud-arrow-down"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_8">Descargas digitales en alta resolución</span>
+        </div>
+        <div class="inclusion-card reveal delay-1">
+          <div class="inclusion-icon-box">
+            <i class="fa-solid fa-certificate"></i>
+          </div>
+          <span class="inclusion-text" data-i18n="inc_9">Derechos de impresión (Print Release)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. PHOTO + MAKEUP FEATURE -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      <div class="photo-makeup-split">
+        <div class="split-image-container reveal-left">
+          <img src="images/studio-setup.jpg" alt="Estudio Isa Hernandez Photo & Makeup LLC">
+          <div class="split-badge-overlap">
+            <h4 data-i18n="idx_dual_artistry_title">Arte Integral</h4>
+            <p data-i18n="idx_dual_artistry_desc">Maquillaje profesional y fotografía en perfecta sincronía, bajo un mismo techo.</p>
+          </div>
+        </div>
+        <div class="reveal-right">
+          <span class="section-kicker" data-i18n="feat_kicker">DUALIDAD ARTÍSTICA</span>
+          <h2 class="section-title" data-i18n="feat_title" style="text-align: left;">Fotografía + Maquillaje en un Solo Estudio</h2>
+          <p class="section-subtitle" data-i18n="feat_desc" style="text-align: left; margin-bottom: 2rem;">
+            Olvídate de coordinar proveedores externos. En mi estudio en Phoenix realizo tu maquillaje y peinado profesional formulado específicamente para lucir radiante bajo la luz de la cámara.
+          </p>
+          <div style="display: flex; gap: 1.2rem; flex-wrap: wrap;">
+            <a href="services.html#makeup" class="btn btn-outline" data-i18n="btn_explore_makeup">VER SERVICIOS DE MAQUILLAJE</a>
+            <a href="booking.html" class="btn btn-primary" data-i18n="btn_book_header">RESERVAR CITA</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. OFFICIAL PACKAGES & PRICING TEASER -->
+  <section class="section-pad bg-sand-tint">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-kicker" data-i18n="pkg_kicker">LISTA OFICIAL DE PRECIOS</span>
+        <h2 class="section-title" data-i18n="pkg_title">Paquetes de Cumpleaños & Sesiones</h2>
+        <div style="margin: 0.6rem 0 1rem 0;">
+          <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(197,160,89,0.12); border: 1px solid var(--accent-gold); color: var(--text-dark); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
+            <i class="fa-solid fa-tag" style="color: var(--accent-gold);"></i>
+            <span data-i18n="pkg_bday_range">Rango de Inversión: $200 – $500 USD</span>
+          </span>
+        </div>
+        <p class="section-subtitle" data-i18n="pkg_subtitle">
+          Tarifas transparentes. Para asegurar tu fecha es necesario un depósito no reembolsable de $50 dólares.
+        </p>
+      </div>
+
+      <div class="packages-teaser-grid">
+        <!-- Golden $225 -->
+        <div class="package-card reveal delay-1">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_b_golden_name">Golden</h3>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_golden_time">45 MINUTOS</div>
+            <ul class="package-features">
+              <li data-i18n="pkg_b_golden_f1">8 imágenes digitales profesionalmente editadas</li>
+              <li data-i18n="pkg_b_golden_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_b_golden_f3">1 outfit (cambio de ropa)</li>
+              <li data-i18n="pkg_b_golden_f4">Guía de poses personalizada</li>
+              <li data-i18n="pkg_b_golden_f5">Entrega máx 2 semanas</li>
+            </ul>
+          </div>
+          <a href="booking.html?service=birthdays&amp;package=golden" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+
+        <!-- Platinum $290 (Featured) -->
+        <div class="package-card featured reveal delay-2">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_b_plat_name">Platinum</h3>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_plat_time">1 HORA</div>
+            <ul class="package-features">
+              <li data-i18n="pkg_b_plat_f1">10 imágenes digitales profesionalmente editadas</li>
+              <li data-i18n="pkg_b_plat_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_b_plat_f3">2 outfits (cambios de ropa)</li>
+              <li data-i18n="pkg_b_plat_f4">Guía de poses personalizada</li>
+              <li data-i18n="pkg_b_plat_f5">Asesoría previa de fotos &amp; vestuario</li>
+              <li data-i18n="pkg_b_plat_f6">Entrega máx 1.5 semanas</li>
+            </ul>
+          </div>
+          <a href="booking.html?service=birthdays&amp;package=platinum" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+
+        <!-- Diamond $460 -->
+        <div class="package-card reveal delay-3">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_b_diam_name">Diamond</h3>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_diam_time">1.5 HORAS</div>
+            <ul class="package-features">
+              <li data-i18n="pkg_b_diam_f1">12 imágenes digitales profesionalmente editadas + 3 B&amp;W adicionales</li>
+              <li data-i18n="pkg_b_diam_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_b_diam_f3">2 outfits (cambios de ropa)</li>
+              <li data-i18n="pkg_b_diam_f4">Guía de poses personalizada</li>
+              <li data-i18n="pkg_b_diam_f5">Asesoría de vestuario &amp; gama de colores</li>
+              <li data-i18n="pkg_b_diam_f6">Moodboard de poses y variedad</li>
+              <li data-i18n="pkg_b_diam_f7">Foto impresa 8x10 (no enmarcado)</li>
+              <li data-i18n="pkg_b_diam_f8">Entrega exprés máx 3 días</li>
+            </ul>
+          </div>
+          <a href="booking.html?service=birthdays&amp;package=diamond" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+      </div>
+
+      <div class="pricing-notice-box reveal" style="max-width: 800px; margin: 3.5rem auto 0 auto; text-align: center;">
+        <p style="margin: 0; font-weight: 500;" data-i18n="pkg_deposit_note">
+          Para asegurar la fecha en calendario es necesario un depósito no reembolsable de $50 dólares.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. ARIZONA LOCATIONS & TRAVEL -->
+  <section class="az-locations-section">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom: 2rem;">
+        <span class="section-kicker" data-i18n="az_kicker">UBICACIÓN & COBERTURA</span>
+        <h2 class="section-title" data-i18n="az_title">Phoenix, Arizona & Alrededores</h2>
+        <p class="section-subtitle" data-i18n="az_subtitle">
+          Estudio privado en 1825 E Northern Ave #273, Phoenix, AZ 85020. Atendiendo a Phoenix, Scottsdale, Chandler, Tempe, Mesa, Goodyear, Avondale y Surprise, además de viajes por todo el estado.
+        </p>
+      </div>
+
+      <div class="az-cities-list reveal">
+        <span class="az-city-item">Phoenix</span>
+        <span class="az-city-item">Scottsdale</span>
+        <span class="az-city-item">Chandler</span>
+        <span class="az-city-item">Tempe</span>
+        <span class="az-city-item">Mesa</span>
+        <span class="az-city-item">Goodyear</span>
+        <span class="az-city-item">Avondale</span>
+        <span class="az-city-item">Surprise</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. APARTADO ESPECÍFICO DE RESEÑAS REALES -->
+  <section id="testimonials" class="section-pad bg-sand-tint" style="border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
+    <div class="container">
+      <div class="section-header reveal" style="text-align: center; max-width: 760px; margin: 0 auto 2.5rem;">
+        <span class="section-kicker" data-i18n="test_kicker">RESEÑAS REALES · EXPERIENCIAS DE CLIENTES</span>
+        <h2 class="section-title" data-i18n="test_title">Opiniones de Quienes Han Vivido la Experiencia</h2>
+        <p class="section-subtitle" data-i18n="test_subtitle" style="margin-top: 0.8rem; color: var(--text-muted); font-size: 0.95rem;">
+          Calificación promedio de 5.0 estrellas basada en opiniones auténticas de nuestras clientas en Phoenix, Arizona.
+        </p>
+      </div>
+
+      <!-- Trust Bar / Reputation Metrics -->
+      <div class="reviews-trust-bar reveal">
+        <div class="trust-bar-item">
+          <div class="trust-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <span class="trust-text" data-i18n="test_stat_rating">5.0 · Calificación Impecable</span>
+        </div>
+        <div class="trust-bar-divider"></div>
+        <div class="trust-bar-item">
+          <i class="fa-solid fa-shield-heart trust-icon"></i>
+          <span class="trust-text" data-i18n="test_stat_satisfaction">100% Clientes Satisfechos</span>
+        </div>
+        <div class="trust-bar-divider"></div>
+        <div class="trust-bar-item">
+          <i class="fa-solid fa-location-dot trust-icon"></i>
+          <span class="trust-text" data-i18n="test_stat_verified">Opiniones Verificadas en Phoenix, AZ</span>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="reviews-filter-bar reveal">
+        <button type="button" class="review-filter-btn active" onclick="filterReviews('all', this)" data-i18n="test_tab_all">Todas las Reseñas</button>
+        <button type="button" class="review-filter-btn" onclick="filterReviews('portraits', this)" data-i18n="test_tab_portraits">Retratos & Estudio</button>
+        <button type="button" class="review-filter-btn" onclick="filterReviews('families', this)" data-i18n="test_tab_families">Familias</button>
+        <button type="button" class="review-filter-btn" onclick="filterReviews('celebrations', this)" data-i18n="test_tab_celebrations">Cumpleaños & Celebraciones</button>
+      </div>
+
+      <div class="testimonials-grid">
+        <!-- 1. Marina Lucero -->
+        <div class="testimonial-card reveal delay-1" data-review-cat="families">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="test_badge_whatsapp">Reseña de WhatsApp</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_1_main">"Quiero compartir cómo fue mi experiencia en la sesión con Isa. Desde el primer momento en que la contacté fue muy amable y respondió a todas mis preguntas con rapidez y claridad. El día de la sesión me hizo sentir como una modelo, fue paciente y muy empática, haciéndome sentir relajada y segura en todo momento</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_1_more">. Me encantó la forma en que nos daba tiempo a mí y a mis hijas para lograr lo que queríamos, creando un ambiente donde todo fluyó de maravilla. El resultado final fue increíble. Nos trató como en casa, con total confianza y profesionalismo. Sin duda alguna la recomiendo y volvería a agendar otra sesión con ella. ¡Muchas gracias Isa!"</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_1_author">Marina Lucero</div>
+            <div class="testimonial-session" data-i18n="idx_test_1_type">Sesión Familiar & Hijas en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 2. Andrea Solís -->
+        <div class="testimonial-card reveal delay-2" data-review-cat="portraits">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-instagram"></i> <span data-i18n="test_badge_instagram">Reseña de Instagram</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_2_main">"Mi experiencia fue sumamente grata. Me gustó mucho el estudio y todas las opciones disponibles, pero lo que más valoré fue su paciencia y cómo me hizo sentir en total confort. Era mi primera sesión fotográfica y nunca me sentí apurada</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_2_more"> ni presionada; incluso extendió el tiempo de nuestra sesión para asegurarse de que estuviera plenamente feliz con cada una de mis fotos. Es una profesional excepcional."</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_2_author">Andrea Solís</div>
+            <div class="testimonial-session" data-i18n="idx_test_2_type">Sesión Individual en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 3. Carlos Domínguez -->
+        <div class="testimonial-card reveal delay-3" data-review-cat="portraits">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-solid fa-circle-check"></i> <span data-i18n="test_badge_verified">Opinión Verificada</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_3_main">"Tuve una experiencia increíble con Isabel. Trabajó conmigo paso a paso y se aseguró de que cada toma quedara perfecta. Me encantó que se tomara el tiempo necesario para cuidar cada detalle</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_3_more">, y durante toda la sesión me sentí con absoluta comodidad y seguridad. ¡Definitivamente volvería a reservar otra sesión con ella!"</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_3_author">Carlos Domínguez</div>
+            <div class="testimonial-session" data-i18n="idx_test_3_type">Retratos en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 4. Claudia Valenzuela -->
+        <div class="testimonial-card reveal delay-1" data-review-cat="celebrations">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="test_badge_whatsapp">Reseña de WhatsApp</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_4_main">"¡Muchas gracias por un trabajo tan excelente! La pasamos de maravilla, nos divertimos durante toda la sesión y quedamos completamente encantadas con las fotos</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_4_more">. La atención, el ambiente del estudio y la calidad de la entrega superaron todas nuestras expectativas."</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_4_author">Claudia Valenzuela</div>1
+            <div class="testimonial-session" data-i18n="idx_test_4_type">Sesión de Celebración en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 5. DaiZzy JaKz -->
+        <div class="testimonial-card reveal delay-2" data-review-cat="celebrations">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-instagram"></i> <span data-i18n="test_badge_instagram">Reseña de Instagram</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_5_main">"¡Mi sesión de cumpleaños fue muy divertida! Isabel fue sumamente profesional, flexible y atenta con sus sugerencias. Realmente escuchó la visión que tenía</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_5_more"> y nunca me hizo sentir apurada. Contar con variedad de accesorios y props para diferentes conceptos hizo que la sesión fuera aún más agradable. Estar en el estudio brindó una experiencia única, y que realicen el peinado y maquillaje ahí mismo es una ventaja inigualable. Las fotos quedaron impecables y con una calidad superior a la esperada. ¡Ya estoy considerando agendar otra sesión con ella!"</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_5_author">DaiZzy JaKz</div>
+            <div class="testimonial-session" data-i18n="idx_test_5_type">Cumpleaños & Maquillaje en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 6. Maura Fimbres -->
+        <div class="testimonial-card reveal delay-3" data-review-cat="families">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="test_badge_whatsapp">Reseña de WhatsApp</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_6_main">"Muchísimas gracias por las fotos, están preciosas. Gracias por todo el esfuerzo y por brindarle a nuestra familia la oportunidad de conservar un recuerdo tan hermoso</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_6_more">. Felicitaciones por su labor, es excelente; realmente posee un don artístico invaluable. Que continúen los éxitos en su estudio."</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_6_author">Maura Fimbres</div>
+            <div class="testimonial-session" data-i18n="idx_test_6_type">Sesión Familiar en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 7. Sabrina Gil -->
+        <div class="testimonial-card reveal delay-1" data-review-cat="families">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-instagram"></i> <span data-i18n="test_badge_instagram">Reseña de Instagram</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_7_main">"¡Nos encantaron los resultados! Isa es muy profesional, nos gustó mucho su trabajo y cómo nos guió con paciencia en cada pose. Fueron sumamente amables</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_7_more"> y nos hicieron sentir en confianza desde el primer minuto. Quedamos muy contentos con la galería y la recomendamos ampliamente a todos nuestros conocidos."</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_7_author">Sabrina Gil</div>
+            <div class="testimonial-session" data-i18n="idx_test_7_type">Sesión de Pareja & Familia</div>
+          </div>
+        </div>
+
+        <!-- 8. Mariana Vega -->
+        <div class="testimonial-card reveal delay-2" data-review-cat="portraits">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-whatsapp"></i> <span data-i18n="test_badge_whatsapp">Reseña de WhatsApp</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_8_main">"Tuve una experiencia excelente en mi sesión fotográfica. Me sentí muy cómoda en todo momento y el resultado final de las imágenes quedó bellísimo</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_8_more">. Estoy sumamente satisfecha con la atención recibida y sin duda alguna volvería a realizar otra sesión. ¡Recomendada al cien por ciento!"</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_8_author">Mariana Vega</div>
+            <div class="testimonial-session" data-i18n="idx_test_8_type">Sesión de Retratos en Estudio</div>
+          </div>
+        </div>
+
+        <!-- 9. Brittany Miller -->
+        <div class="testimonial-card reveal delay-3" data-review-cat="portraits">
+          <div class="testimonial-header-meta">
+            <div class="testimonial-stars" aria-label="5 estrellas">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <span class="testimonial-badge"><i class="fa-brands fa-instagram"></i> <span data-i18n="test_badge_instagram">Reseña de Instagram</span></span>
+          </div>
+          <p class="testimonial-quote">
+            <span data-i18n="idx_test_9_main">"Thank you so much, I truly enjoyed working with you both. The studio ambiance was warm and welcoming</span><span class="testimonial-ellipsis">...</span><span class="testimonial-full-text" style="display: none;" data-i18n="idx_test_9_more">, and the final portraits turned out absolutely wonderful. Outstanding experience from start to finish."</span>
+          </p>
+          <button type="button" class="btn-read-more" onclick="toggleTestimonial(this)" aria-expanded="false">
+            <span class="read-more-label" data-i18n="btn_read_more">Leer más</span>
+            <i class="fa-solid fa-chevron-down read-more-icon"></i>
+          </button>
+          <div class="testimonial-footer">
+            <div class="testimonial-author" data-i18n="idx_test_9_author">Brittany Miller</div>
+            <div class="testimonial-session" data-i18n="idx_test_9_type">Sesión en Pareja & Retratos</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. INSTAGRAM FEED -->
+  <section class="section-pad-sm bg-sand-tint" style="border-top: 1px solid var(--border-light);">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 2rem;" class="reveal">
+        <span class="section-kicker" data-i18n="footer_follow">SÍGUEME EN INSTAGRAM</span>
+        <h3 style="font-family: var(--font-display); font-size: 0.95rem; letter-spacing: 0.25em; text-transform: uppercase;">
+          <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" style="color: var(--text-dark);">
+            <i class="fa-brands fa-instagram" style="margin-right: 0.4rem;"></i>@isahphotographer
+          </a>
+        </h3>
+      </div>
+
+      <div class="instagram-strip reveal">
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home.jpg" alt="Instagram Post 1">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-1.jpg" alt="Instagram Post 2">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-2.jpg" alt="Instagram Post 3">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-3.jpg" alt="Instagram Post 4">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-4.jpg" alt="Instagram Post 5">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="instagram-thumb">
+          <img src="images/home-5.jpg" alt="Instagram Post 6">
+          <div class="instagram-overlay"><i class="fa-brands fa-instagram" style="font-size: 1.5rem;"></i></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. FOOTER (With Official Logo) -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-hero-cta reveal">
+        <div class="footer-cta-text">
+          <span class="footer-script-title" data-i18n="footer_script">Hablemos</span>
+          <span class="footer-sub-prompt" data-i18n="footer_prompt">¿LISTA PARA CREAR ALGO INCREÍBLE?</span>
+        </div>
+        
+        <div>
+          <a href="booking.html" class="btn btn-outline-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_book_footer">RESERVAR AHORA</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+
+        <div class="footer-social-aside">
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="footer-instagram-tag">
+            <span data-i18n="footer_follow">SÍGUEME EN INSTAGRAM</span> · @isahphotographer
+          </a>
+        </div>
+      </div>
+
+      <!-- Main Columns -->
+      <div class="footer-grid reveal">
+        <div class="footer-col">
+                    <a href="index.html" class="brand-logo" style="margin-bottom: 1.2rem;" aria-label="Isa Hernandez Photo & Makeup LLC">
+            <img src="images/logo-white.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img footer-logo-img">
+          </a>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); max-width: 320px; line-height: 1.8;" data-i18n="footer_desc">
+            Fotografía auténtica y maquillaje profesional en Phoenix, Arizona. Creando recuerdos atemporales con arte y emoción.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_nav_heading">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="about.html" data-i18n="nav_about">Sobre Isa</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Servicios & Precios</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portafolio</a></li>
+            <li><a href="policies.html" data-i18n="nav_policies">Políticas & Legal</a></li>
+            <li><a href="faq.html" data-i18n="nav_faq">Experiencia & FAQ</a></li>
+            <li><a href="booking.html" data-i18n="nav_booking">Reservar Cita</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_services_heading">Servicios</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#portraits" data-i18n="idx_footer_srv_1">Retratos Individuales</a></li>
+            <li><a href="services.html#couples" data-i18n="idx_footer_srv_2">Sesiones de Pareja</a></li>
+            <li><a href="services.html#milestones" data-i18n="idx_footer_srv_3">Familias & Cumpleaños</a></li>
+            <li><a href="services.html#weddings" data-i18n="idx_footer_srv_4">Bodas & Quinceañeras</a></li>
+            <li><a href="services.html#makeup" data-i18n="cat_makeup">Maquillaje Profesional</a></li>
+            <li><a href="services.html#commercial" data-i18n="cat_professionals">Personal Branding</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_contact_heading">Contacto & Estudio</h4>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <a href="https://maps.google.com/?q=1825+E+Northern+Ave+%23273,+Phoenix,+AZ+85020" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: underline;">
+              <i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>1825 E Northern Ave #273, Phoenix, AZ 85020
+            </a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Email: <a href="mailto:Isavision21@gmail.com" style="color: #FFFFFF;">Isavision21@gmail.com</a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 1.2rem;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Tel / WhatsApp: <a href="https://wa.me/16025823407" style="color: #FFFFFF;">+1 (602) 582-3407</a>
+          </p>
+          <a href="booking.html" class="btn btn-sm btn-primary" data-i18n="btn_book_header">RESERVAR CITA</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span data-i18n="footer_copyright">© Isa Hernandez · Photo & Make Up · Phoenix, AZ</span>
+        <span data-i18n="footer_coverage_cities">Phoenix · Scottsdale · Chandler · Tempe · Mesa · Goodyear · Avondale · Surprise</span>
+        <div style="display: flex; gap: 1.2rem;">
+          <a href="policies.html" style="color: rgba(255,255,255,0.85); text-decoration: underline;" data-i18n="footer_terms_link">Políticas Oficiales & Términos</a>
+          <a href="policies.html#datos" style="color: rgba(255,255,255,0.85);" data-i18n="footer_privacy_link">Privacidad</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal">
+    <button class="lightbox-close" aria-label="Cerrar">&times;</button>
+    <button class="lightbox-nav-btn lightbox-prev" aria-label="Anterior">&#10094;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img">
+      <div class="lightbox-caption"></div>
+    </div>
+    <button class="lightbox-nav-btn lightbox-next" aria-label="Siguiente">&#10095;</button>
+  </div>
+
+  <!-- Floating Mobile Language Selector Bubble -->
+  <div class="mobile-floating-lang" aria-label="Language Selector">
+    <i class="fa-solid fa-globe" style="color: rgba(255,255,255,0.7); font-size: 0.75rem; margin-right: 2px;"></i>
+    <button class="lang-btn active" data-lang="es">ES</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>
+
+

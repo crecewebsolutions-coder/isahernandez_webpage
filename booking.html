@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservar Cita | Isa Hernandez Photo & Makeup LLC · Phoenix, AZ</title>
+  <meta name="description" content="Reserva tu sesión de fotografía y maquillaje con Isa Hernandez Photo & Makeup LLC en Phoenix, Arizona. Elige tu fecha, servicios y aparta con $50 USD.">
+    <!-- Official Brand Favicon (Camera Eye Isotype) -->
+  <link rel="shortcut icon" href="favicon.ico?v=5">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/brand-icon-32.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/brand-icon-16.png?v=5">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/brand-icon.png?v=5">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/brand-touch-icon.png?v=5">
+  <link rel="icon" type="image/svg+xml" href="images/brand-icon.svg?v=5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+
+  <!-- Site Header -->
+  <header class="site-header header-light">
+    <div class="container">
+      <div class="nav-inner">
+                <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+          <img src="images/logo.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img logo-dark">
+          <img src="images/logo-white.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img logo-white">
+        </a>
+
+        <nav class="desktop-nav">
+          <a href="index.html" class="nav-link" data-i18n="nav_home">INICIO</a>
+          <a href="about.html" class="nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+          <a href="services.html" class="nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+          <a href="portfolio.html" class="nav-link" data-i18n="nav_portfolio">PORTAFOLIO</a>
+          <a href="index.html#testimonials" class="nav-link" data-i18n="nav_reviews">RESEÑAS</a>
+          <a href="policies.html" class="nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+          <a href="faq.html" class="nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+          <a href="contact.html" class="nav-link" data-i18n="nav_contact">CONTACTO</a>
+        
+        </nav>
+
+        <div class="nav-actions">
+
+          
+          <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="nav-social-icon" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="booking.html" class="btn btn-primary header-book-btn active" data-i18n="btn_book_header">RESERVAR CITA</a>
+
+          <button class="mobile-toggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer-overlay"></div>
+  <aside class="mobile-drawer">
+    <div class="mobile-drawer-header">
+            <a href="index.html" class="brand-logo" aria-label="Isa Hernandez Photo & Makeup LLC">
+        <img src="images/logo.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img logo-dark">
+      </a>
+      <button class="mobile-drawer-close" aria-label="Cerrar menú">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="mobile-nav-list">
+      <a href="index.html" class="mobile-nav-link" data-i18n="nav_home">INICIO</a>
+      <a href="about.html" class="mobile-nav-link" data-i18n="nav_about">SOBRE MÍ</a>
+      <a href="services.html" class="mobile-nav-link" data-i18n="nav_services">SERVICIOS & PRECIOS</a>
+      <a href="portfolio.html" class="mobile-nav-link" data-i18n="nav_portfolio">PORTAFOLIO</a>
+      <a href="index.html#testimonials" class="mobile-nav-link" data-i18n="nav_reviews">RESEÑAS</a>
+      <a href="policies.html" class="mobile-nav-link" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>
+      <a href="faq.html" class="mobile-nav-link" data-i18n="nav_faq">EXPERIENCIA & FAQ</a>
+      <a href="contact.html" class="mobile-nav-link" data-i18n="nav_contact">CONTACTO</a>
+      <a href="booking.html" class="mobile-nav-link active" style="color: var(--text-dark); font-weight: 700;" data-i18n="nav_booking">RESERVAR CITA</a>
+    </div>
+    <div style="border-top: 1px solid var(--border-light); padding-top: 1.5rem; margin-top: auto;">
+      <div class="mobile-drawer-lang">
+        <button class="lang-btn active" data-lang="es">ESPAÑOL</button>
+        <button class="lang-btn" data-lang="en">ENGLISH</button>
+      </div>
+      <a href="booking.html" class="btn btn-primary btn-block" style="margin-bottom: 0.8rem;" data-i18n="btn_book_header">RESERVAR CITA</a>
+      <p style="font-size: 0.72rem; color: var(--text-muted); text-align: center; letter-spacing: 0.15em;">PHOENIX, AZ · @isahphotographer</p>
+    </div>
+  </aside>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container reveal">
+      <span class="section-kicker" data-i18n="book_page_kicker">PLANIFICA TU SESIÓN</span>
+      <h1 data-i18n="book_page_title">Reserva tu Cita</h1>
+      <p data-i18n="book_page_desc">Selecciona tu sesión, fechas y complementos. Tu fecha queda confirmada con un depósito de $50 USD.</p>
+    </div>
+  </section>
+
+  <!-- Interactive Booking Wizard -->
+  <section class="section-pad bg-white">
+    <div class="container">
+      
+      <div class="booking-wizard-wrapper reveal-zoom">
+
+        <!-- Progress Steps Bar -->
+        <div class="booking-progress-bar">
+          <div class="progress-step-item active" data-step="1">
+            <div class="step-indicator">1</div>
+            <span class="step-label" data-i18n="step_session">1. Sesión</span>
+          </div>
+          <div class="progress-step-item" data-step="2">
+            <div class="step-indicator">2</div>
+            <span class="step-label" data-i18n="step_date">2. Fecha y Lugar</span>
+          </div>
+          <div class="progress-step-item" data-step="3">
+            <div class="step-indicator">3</div>
+            <span class="step-label" data-i18n="step_extras">3. Extras</span>
+          </div>
+          <div class="progress-step-item" data-step="4">
+            <div class="step-indicator">4</div>
+            <span class="step-label" data-i18n="step_contact">4. Tus Datos</span>
+          </div>
+        </div>
+
+        <form id="bookingForm" onsubmit="return false;">
+
+          <!-- STEP 1: Session Selection -->
+          <div class="booking-step-pane active" id="wizardStep1">
+            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.35rem; text-align: center;" data-i18n="book_s1_title">
+              ¿Qué tipo de sesión deseas realizar?
+            </h3>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1.3rem; font-size: 0.88rem;" data-i18n="book_s1_desc">
+              Selecciona una de las opciones para comenzar a personalizar tu experiencia:
+            </p>
+
+            <div class="session-choice-grid">
+              <!-- Parejas -->
+              <div class="session-choice-card selected" data-service="Sesión Pareja (Couple)">
+                <div class="choice-icon"><i class="fa-solid fa-user-group" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_couples_t">Parejas / Couple</div>
+                <div class="choice-desc" data-i18n="book_srv_couples_d">Rango: $260 – $480 USD · The Date, The Story, The Experience</div>
+              </div>
+
+              <!-- Familia -->
+              <div class="session-choice-card" data-service="Sesión Familiar (Family)">
+                <div class="choice-icon"><i class="fa-solid fa-people-roof" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_fam_t">Familia & Hitos</div>
+                <div class="choice-desc" data-i18n="book_srv_fam_d">Rango: $290 – $499 USD · Moments, Together, Complete Story</div>
+              </div>
+
+              <!-- Cumpleaños -->
+              <div class="session-choice-card" data-service="Sesión Cumpleaños (Birthday)">
+                <div class="choice-icon"><i class="fa-solid fa-cake-candles" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_bday_t">Cumpleaños</div>
+                <div class="choice-desc" data-i18n="book_srv_bday_d">Rango: $225 – $460 USD · Golden, Platinum, Diamond</div>
+              </div>
+
+              <!-- Graduación -->
+              <div class="session-choice-card" data-service="Graduaciones (Seniors)">
+                <div class="choice-icon"><i class="fa-solid fa-graduation-cap" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_grad_t">Graduación / Senior</div>
+                <div class="choice-desc" data-i18n="book_srv_grad_d">1 hr · Toga, birrete & outfit casual</div>
+              </div>
+
+              <!-- Bodas -->
+              <div class="session-choice-card" data-service="Bodas (Wedding)">
+                <div class="choice-icon"><i class="fa-solid fa-ring" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_wed_t">Bodas / Wedding</div>
+                <div class="choice-desc" data-i18n="book_srv_wed_d">Desde 5 hrs · Incluye segundo fotógrafo</div>
+              </div>
+
+              <!-- Quinceañeras -->
+              <div class="session-choice-card" data-service="Quinceañeras / Sweet 16">
+                <div class="choice-icon"><i class="fa-solid fa-crown" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_quince_t">Quinceañera / Sweet 16</div>
+                <div class="choice-desc" data-i18n="book_srv_quince_d">Sesión de gala · Estudio o Locación exterior</div>
+              </div>
+
+              <!-- Branding -->
+              <div class="session-choice-card" data-service="Personal Branding & Headshots">
+                <div class="choice-icon"><i class="fa-solid fa-briefcase" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_brand_t">Personal Branding & Profesionales</div>
+                <div class="choice-desc" data-i18n="book_srv_brand_d">Rango: $180 – $380 USD · Essential, Elevated, Executive</div>
+              </div>
+
+              <!-- Maquillaje -->
+              <div class="session-choice-card" data-service="Maquillaje & Peinado Profesional">
+                <div class="choice-icon"><i class="fa-solid fa-paintbrush" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_makeup_t">Solo Maquillaje</div>
+                <div class="choice-desc" data-i18n="book_srv_makeup_d">Maquillaje para evento o sesión fotográfica</div>
+              </div>
+
+              <!-- Otro Tipo / Personalizado -->
+              <div class="session-choice-card" data-service="Otro Tipo (Personalizado)">
+                <div class="choice-icon"><i class="fa-solid fa-sliders" style="color: var(--accent-terracotta);"></i></div>
+                <div class="choice-title" data-i18n="book_srv_other_t">Otro Tipo / Personalizado</div>
+                <div class="choice-desc" data-i18n="book_srv_other_d">Maternidad, Newborn, Eventos, Moda o Proyectos a medida</div>
+              </div>
+            </div>
+
+            <!-- Contenedor Dinámico que Cambia en Tiempo Real según la Sesión Elegida -->
+            <div id="dynamicSessionContainer" class="dynamic-session-container">
+              <!-- Inyectado dinámicamente vía booking.js -->
+            </div>
+          </div>
+
+          <!-- STEP 2: Date & Location with LIVE CALENDAR & Google Calendar Integration -->
+          <div class="booking-step-pane" id="wizardStep2">
+            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.35rem; text-align: center;" data-i18n="book_s2_title">
+              Fecha y Horario en Vivo
+            </h3>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1.3rem; font-size: 0.88rem;" data-i18n="book_s2_desc">
+              Selecciona tu fecha y hora preferida en nuestro calendario en tiempo real sincronizado con Google Calendar:
+            </p>
+
+            <!-- ======================================================== -->
+            <!-- LIVE CALENDAR & GOOGLE CALENDAR API INTEGRATION WIDGET   -->
+            <!-- ======================================================== -->
+            <div class="live-calendar-card" id="liveCalendarWidget">
+              <!-- Header with Month, Year & Controls -->
+              <div class="calendar-header-bar">
+                <div class="calendar-title-group">
+                  <h4 class="calendar-month-title" id="calendarMonthTitle">Octubre 2026</h4>
+                </div>
+                <div class="calendar-nav-buttons">
+                  <button type="button" class="cal-nav-btn" id="calPrevMonth" aria-label="Mes anterior"><i class="fa-solid fa-chevron-left"></i></button>
+                  <button type="button" class="cal-nav-btn cal-today-btn" id="calTodayBtn" data-i18n="cal_today">Hoy</button>
+                  <button type="button" class="cal-nav-btn" id="calNextMonth" aria-label="Mes siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+                </div>
+              </div>
+
+              <!-- Weekdays Header -->
+              <div class="calendar-weekdays-grid">
+                <span data-i18n="cal_wd_sun">DOM</span>
+                <span data-i18n="cal_wd_mon">LUN</span>
+                <span data-i18n="cal_wd_tue">MAR</span>
+                <span data-i18n="cal_wd_wed">MIÉ</span>
+                <span data-i18n="cal_wd_thu">JUE</span>
+                <span data-i18n="cal_wd_fri">VIE</span>
+                <span data-i18n="cal_wd_sat">SÁB</span>
+              </div>
+
+              <!-- Days Grid (Rendered dynamically) -->
+              <div class="calendar-days-grid" id="calendarDaysGrid">
+                <!-- Injected via JavaScript -->
+              </div>
+
+              <!-- Legend -->
+              <div class="calendar-legend-bar">
+                <div class="legend-item"><span class="legend-dot available"></span> <span data-i18n="cal_legend_avail">Día Abierto / Disponible</span></div>
+                <div class="legend-item"><span class="legend-dot selected"></span> <span data-i18n="cal_legend_sel">Día Seleccionado</span></div>
+                <div class="legend-item"><span class="legend-dot" style="background: #E5E7EB; border: 1px solid #D1D5DB;"></span> <span data-i18n="cal_legend_closed">No Disponible</span></div>
+              </div>
+
+              <!-- Time Interest Section (Appears when day is clicked) -->
+              <div class="live-time-slots-wrapper" id="liveTimeSlotsWrapper" style="display: none;">
+                <div class="time-slots-header">
+                  <span class="time-slots-title"><i class="fa-regular fa-clock" style="color: var(--accent-terracotta); margin-right: 0.4rem;"></i><span data-i18n="cal_slots_for">¿En qué horario estás interesada para</span> <strong id="selectedDateHumanText"></strong>?</span>
+                  <span class="time-slots-hint" data-i18n="cal_slots_hint">Selecciona mañana, tarde o noche, o escribe tu horario preferido:</span>
+                </div>
+
+                <div class="time-slots-grid" id="timeSlotsGrid">
+                  <!-- Timeframe Chips dynamically generated (Mañana, Tarde, Noche / Atardecer) -->
+                </div>
+
+                <!-- Custom Time or Notes Input -->
+                <div class="custom-time-interest-box">
+                  <label for="customTimeInput" data-i18n="cal_custom_time_lbl">¿Tienes un horario específico en mente o alguna preferencia?</label>
+                  <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                    <input type="text" id="customTimeInput" class="form-control" style="flex: 1; min-width: 240px; font-size: 0.88rem; padding: 0.65rem 0.9rem;" placeholder="Ej: 10:30 AM, 4:00 PM, Al atardecer / Golden Hour..." data-i18n-placeholder="cal_custom_time_ph">
+                    <button type="button" class="btn btn-outline" id="btnApplyCustomTime" style="padding: 0.65rem 1.15rem; font-size: 0.78rem; font-weight: 600;" data-i18n="cal_custom_time_btn">APLICAR</button>
+                  </div>
+                  <small style="display: block; margin-top: 0.35rem; color: var(--text-muted); font-size: 0.73rem;" data-i18n="cal_custom_time_help">Puedes elegir una franja arriba o escribir el horario exacto que mejor se acomode a ti.</small>
+                </div>
+              </div>
+
+              <!-- Active Selection Pill & Sync Target -->
+              <div class="calendar-selected-summary" id="calSelectedSummary" style="display: none;">
+                <div class="summary-content">
+                  <i class="fa-solid fa-circle-check" style="color: #2E7D32;"></i>
+                  <span><strong data-i18n="cal_chosen_label">Cita Seleccionada:</strong> <span id="summaryDateTimeText"></span></span>
+                </div>
+                <button type="button" class="btn-clear-selection" onclick="clearSelectedSlot()" title="Cambiar fecha u horario"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+
+              <!-- Hidden input bound to wizard submit for compatibility -->
+              <input type="hidden" id="bookingDesiredDate" name="bookingDesiredDate" required>
+              <input type="hidden" id="bookingDesiredTime" name="bookingDesiredTime" value="10:00 AM">
+
+              <!-- Optional Backup Date Accordion -->
+              <div class="backup-date-accordion">
+                <button type="button" class="backup-date-toggle" id="backupDateToggle" onclick="toggleBackupDate()">
+                  <i class="fa-solid fa-calendar-plus" style="margin-right: 0.4rem;"></i>
+                  <span data-i18n="cal_backup_toggle">+ Agregar fecha alternativa de respaldo (Opcional)</span>
+                </button>
+                <div class="backup-date-content" id="backupDateContent" style="display: none; margin-top: 0.6rem;">
+                  <label class="form-label" for="bookingBackupDate" style="font-size: 0.8rem;" data-i18n="book_lbl_date2">Segunda opción de fecha de respaldo:</label>
+                  <input type="date" id="bookingBackupDate" class="form-control" style="max-width: 260px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 0.5rem;">
+              <label class="form-label"><i class="fa-solid fa-location-dot" style="margin-right: 0.4rem;"></i><span data-i18n="book_lbl_loc">Preferencia de Locación *</span></label>
+              <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 0.35rem;">
+                <label class="checkbox-label">
+                  <input type="radio" name="locationRadio" value="Estudio Phoenix (1825 E Northern Ave #273)" checked>
+                  <span data-i18n="book_loc_1">Estudio Privado en Phoenix (1825 E Northern Ave #273, Phoenix, AZ 85020) · Sin cargo de viaje</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="locationRadio" value="Exterior en Phoenix Metro (Scottsdale, Tempe, etc.)">
+                  <span data-i18n="book_loc_2">Exterior en Phoenix Metro (Scottsdale, Chandler, Tempe, Mesa, Goodyear, Avondale, Surprise)</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="locationRadio" value="Exterior en Arizona (Sedona, Flagstaff, Tucson)">
+                  <span data-i18n="book_loc_3">Destino en Arizona (Sedona, Flagstaff, Tucson, Prescott · Travel fee individual)</span>
+                </label>
+                <label class="checkbox-label">
+                  <input type="radio" name="locationRadio" value="Domicilio o locación privada del cliente">
+                  <span data-i18n="book_loc_4">Domicilio o locación privada (A convenir)</span>
+                </label>
+              </div>
+              <div id="locationDetailBox" class="dynamic-other-box" style="display: none; margin-top: 0.6rem;">
+                <div class="dynamic-other-label"><i class="fa-solid fa-pen-to-square"></i> <span data-i18n="book_loc_detail_lbl">Especificar dirección, ciudad o detalles de la locación:</span></div>
+                <input type="text" id="locationDetailInput" class="form-control dynamic-other-input" placeholder="Ej. Casa en Scottsdale / Hotel en Paradise Valley" data-i18n-placeholder="book_loc_detail_ph">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="bookingPeople"><i class="fa-solid fa-users" style="margin-right: 0.4rem;"></i><span data-i18n="book_lbl_people">Número de Personas en Sesión</span></label>
+              <select id="bookingPeople" class="form-control">
+                <option value="1 persona" data-i18n="book_peop_1">1 persona</option>
+                <option value="2 personas (Pareja)" data-i18n="book_peop_2">2 personas (Pareja)</option>
+                <option value="3 a 5 personas" data-i18n="book_peop_3">3 a 5 personas (Familia pequeña)</option>
+                <option value="6 a 12 personas" data-i18n="book_peop_4">6 a 12 personas (Familia extendida)</option>
+                <option value="Más de 12 personas" data-i18n="book_peop_5">Más de 12 personas (Grupo grande)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- STEP 3: Add-ons & Custom Details -->
+          <div class="booking-step-pane" id="wizardStep3">
+            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.35rem; text-align: center;" data-i18n="book_s3_title">
+              Servicios Complementarios (Opcionales)
+            </h3>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1.3rem; font-size: 0.88rem;" data-i18n="book_s3_desc">
+              Enriquece tu sesión con estilismo o entrega exprés:
+            </p>
+
+            <div style="background: var(--bg-sand); padding: 1.2rem 1.4rem; border: 1px solid var(--border-light); margin-bottom: 1.2rem;">
+              <label class="checkbox-label">
+                <input type="checkbox" class="addon-checkbox" value="Maquillaje Profesional por Isa">
+                <span>
+                  <strong><i class="fa-solid fa-paintbrush" style="color: var(--accent-terracotta); margin-right: 0.4rem;"></i><span data-i18n="book_addon_1_t">Maquillaje Profesional de Estudio (por Isa Hernandez)</span></strong><br>
+                  <small style="color: var(--text-muted);" data-i18n="book_addon_1_d">Acabado HD de larga duración optimizado para la iluminación de cámara.</small>
+                </span>
+              </label>
+
+              <label class="checkbox-label" style="margin-top: 0.75rem;">
+                <input type="checkbox" class="addon-checkbox" value="Peinado / Hair Styling">
+                <span>
+                  <strong><i class="fa-solid fa-scissors" style="color: var(--accent-terracotta); margin-right: 0.4rem;"></i><span data-i18n="book_addon_2_t">Peinado / Hair Styling Profesional</span></strong><br>
+                  <small style="color: var(--text-muted);" data-i18n="book_addon_2_d">Ondas, peinado suelto o recogido editorial para complementar tu look.</small>
+                </span>
+              </label>
+
+              <label class="checkbox-label" style="margin-top: 0.75rem;">
+                <input type="checkbox" class="addon-checkbox" value="Rush Delivery Exprés (+$50 USD)">
+                <span>
+                  <strong><i class="fa-solid fa-bolt" style="color: var(--accent-terracotta); margin-right: 0.4rem;"></i><span data-i18n="book_addon_3_t">Rush Delivery Exprés (+$50 USD)</span></strong><br>
+                  <small style="color: var(--text-muted);" data-i18n="book_addon_3_d">Entrega prioritaria de tu galería privada en pocos días tras la sesión.</small>
+                </span>
+              </label>
+
+              <label class="checkbox-label" style="margin-top: 0.75rem;">
+                <input type="checkbox" class="addon-checkbox" value="Asistencia de Client Closet">
+                <span>
+                  <strong><i class="fa-solid fa-shirt" style="color: var(--accent-terracotta); margin-right: 0.4rem;"></i><span data-i18n="book_addon_4_t">Asistencia de Client Closet</span></strong><br>
+                  <small style="color: var(--text-muted);" data-i18n="book_addon_4_d">Uso de piezas y accesorios seleccionados de nuestro armario de estudio.</small>
+                </span>
+              </label>
+            </div>
+
+            <!-- Retainer Summary Box -->
+            <div class="retainer-callout-card" style="padding: 1.2rem 1.4rem;">
+              <div class="retainer-header" style="margin-bottom: 0.6rem;">
+                <div>
+                  <h4 style="font-family: var(--font-serif); font-size: 1.15rem; margin-bottom: 0.2rem;" data-i18n="book_ret_title">Depósito para Confirmar Reserva</h4>
+                  <p style="font-size: 0.82rem; color: var(--text-muted); margin: 0;" data-i18n="book_ret_sub">Deducible del costo final de tu paquete</p>
+                </div>
+                <div class="retainer-amount" id="summaryRetainer" style="font-size: 1.5rem;">$50 USD</div>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-body); line-height: 1.5; margin: 0;" data-i18n="book_ret_desc">
+                El depósito de $50 USD se transfiere vía Zelle o Efectivo. La fecha queda formalmente apartada en calendario al recibir dicho anticipo. El resto se liquida al concluir la sesión de fotos.
+              </p>
+            </div>
+          </div>
+
+          <!-- STEP 4: Client Contact & Confirmation -->
+          <div class="booking-step-pane" id="wizardStep4">
+            <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin-bottom: 0.35rem; text-align: center;" data-i18n="book_s4_title">
+              Tus Datos de Contacto
+            </h3>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 1.3rem; font-size: 0.88rem;" data-i18n="book_s4_desc">
+              Completa tus datos para enviarte la confirmación, cotización exacta y tu guía de preparación:
+            </p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="clientName"><i class="fa-solid fa-user" style="margin-right: 0.4rem;"></i><span data-i18n="book_lbl_name">Nombre Completo *</span></label>
+                <input type="text" id="clientName" class="form-control" placeholder="Ej. Mariana López" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientEmail"><i class="fa-solid fa-envelope" style="margin-right: 0.4rem;"></i><span data-i18n="book_lbl_email">Correo Electrónico *</span></label>
+                <input type="email" id="clientEmail" class="form-control" placeholder="mariana@ejemplo.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="clientPhone"><i class="fa-brands fa-whatsapp" style="margin-right: 0.4rem;"></i><span data-i18n="book_lbl_phone">Teléfono o WhatsApp *</span></label>
+                <input type="tel" id="clientPhone" class="form-control" placeholder="+1 (602) 000-0000" required>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="clientReferral"><span data-i18n="book_lbl_ref">¿Cómo me encontraste?</span></label>
+                <select id="clientReferral" class="form-control">
+                  <option value="Instagram" data-i18n="book_ref_ig">Instagram (@isahphotographer)</option>
+                  <option value="Recomendación" data-i18n="book_ref_rec">Recomendación de un amigo/familiar</option>
+                  <option value="Búsqueda en Google" data-i18n="book_ref_google">Búsqueda en Google</option>
+                  <option value="Sitio Web Oficial" data-i18n="book_ref_web">Sitio Web Oficial</option>
+                  <option value="Otro" data-i18n="book_ref_other">Otro</option>
+                </select>
+                <div id="referralDetailBox" class="dynamic-other-box" style="display: none; margin-top: 0.5rem;">
+                  <div class="dynamic-other-label"><i class="fa-solid fa-pen-to-square"></i> <span data-i18n="book_ref_detail_lbl">Especificar cómo nos encontraste:</span></div>
+                  <input type="text" id="referralDetailInput" class="form-control dynamic-other-input" placeholder="Ej. TikTok, evento, volante, etc." data-i18n-placeholder="book_ref_detail_ph">
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="clientNotes"><span data-i18n="book_lbl_notes">Cuéntame sobre tu visión (Outfits, colores, temática, etc.)</span></label>
+              <textarea id="clientNotes" class="form-control" rows="3" placeholder="Ej. Queremos una sesión de aniversario al atardecer en el desierto con vestidos neutros..." data-i18n="book_notes_ph"></textarea>
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+              <label class="checkbox-label">
+                <input type="checkbox" id="agreeTerms" required checked>
+                <span style="font-size: 0.82rem;">
+                  <span data-i18n="book_agree_terms">Acepto las Políticas Oficiales & Términos de Servicio: Entiendo que el depósito de $50 USD es no reembolsable, deducible del precio final, y que se rige bajo las políticas de cancelación, demoras y derechos de autor de Isa Hernandez Photo & Makeup LLC.</span> (<a href="policies.html" target="_blank" style="text-decoration: underline; font-weight: 600;" data-i18n="nav_policies">POLÍTICAS & LEGAL</a>)
+                </span>
+              </label>
+
+              <label class="checkbox-label" style="margin-top: 0.5rem;">
+                <input type="checkbox" id="agreePromo" checked>
+                <span style="font-size: 0.82rem;" data-i18n="book_agree_promo">
+                  Deseo recibir confirmación, guías de sesión y novedades exclusivas por correo y WhatsApp.
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Wizard Navigation Buttons -->
+          <div class="wizard-nav-buttons">
+            <button type="button" class="btn btn-outline btn-wizard-prev" style="display: none;" data-i18n="btn_prev_step">
+              ← PASO ANTERIOR
+            </button>
+            <button type="button" class="btn btn-primary btn-wizard-next" style="margin-left: auto;" data-i18n="btn_next_step">
+              SIGUIENTE PASO →
+            </button>
+            <button type="submit" class="btn btn-primary btn-wizard-submit" style="display: none; margin-left: auto; background-color: var(--accent-terracotta); border-color: var(--accent-terracotta);" data-i18n="btn_submit_booking">
+              CONFIRMAR SOLICITUD DE RESERVA
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Success Confirmation Modal -->
+  <div class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.5rem; color: var(--text-dark);" data-i18n="book_modal_title">
+        ¡Solicitud Enviada con Éxito!
+      </h3>
+      <p style="font-size: 0.95rem; color: var(--text-muted); margin-bottom: 1.5rem;" data-i18n="book_modal_desc">
+        Hemos recibido tu solicitud de sesión. Para apartar oficialmente tu fecha en el calendario, envía tu comprobante del depósito de $50 USD.
+      </p>
+
+      <div id="modalSummaryText" style="text-align: left; background: var(--bg-sand); padding: 1.2rem; font-size: 0.88rem; line-height: 1.7; margin-bottom: 1.8rem; border-left: 3px solid var(--accent-terracotta);">
+        <!-- Populated via booking.js -->
+      </div>
+
+      <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+        <a href="" target="_blank" rel="noopener" class="btn btn-primary btn-whatsapp-send" style="background-color: #25D366; border-color: #25D366; color: #FFFFFF;">
+          <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem;"></i><span data-i18n="book_modal_wa">CONFIRMAR POR WHATSAPP AHORA</span>
+        </a>
+        <a href="" id="btnBookingEmail" class="btn btn-outline" style="color: var(--text-dark); border-color: var(--border-light);">
+          <i class="fa-solid fa-envelope" style="margin-right: 0.5rem;"></i><span data-i18n="book_modal_email">ENVIAR COPIA POR CORREO</span>
+        </a>
+        <a href="" id="btnBookingGcal" target="_blank" rel="noopener" class="btn btn-outline" style="color: #1A73E8; border-color: #4285F4; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+          <i class="fa-brands fa-google" style="color: #4285F4;"></i><span data-i18n="book_modal_gcal">AÑADIR A MI GOOGLE CALENDAR</span>
+        </a>
+        <button type="button" class="btn btn-outline btn-modal-close" data-i18n="book_modal_close">Cerrar y Volver</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-hero-cta reveal">
+        <div class="footer-cta-text">
+          <span class="footer-script-title" data-i18n="footer_script">Hablemos</span>
+          <span class="footer-sub-prompt" data-i18n="footer_prompt">¿LISTA PARA CREAR ALGO INCREÍBLE?</span>
+        </div>
+        <div>
+          <a href="booking.html" class="btn btn-outline-white" style="padding: 0.95rem 2.2rem;">
+            <span data-i18n="btn_book_footer">RESERVAR AHORA</span>
+            <span class="btn-arrow">→</span>
+          </a>
+        </div>
+        <div class="footer-social-aside">
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+          <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="footer-instagram-tag">
+            <span data-i18n="footer_follow">SÍGUEME EN INSTAGRAM</span> · @isahphotographer
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-grid reveal">
+        <div class="footer-col">
+                    <a href="index.html" class="brand-logo" style="margin-bottom: 1.2rem;" aria-label="Isa Hernandez Photo & Makeup LLC">
+            <img src="images/logo-white.png" alt="Isa Hernandez Photo & Makeup LLC" class="brand-logo-img footer-logo-img">
+          </a>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); max-width: 320px; line-height: 1.8;" data-i18n="footer_bio">
+            Fotografía auténtica y maquillaje profesional en Phoenix, Arizona. Creando recuerdos atemporales con arte y emoción.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_explore">Navegación</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" data-i18n="nav_home">Inicio</a></li>
+            <li><a href="about.html" data-i18n="nav_about">Sobre Isa</a></li>
+            <li><a href="services.html" data-i18n="nav_services">Servicios & Precios</a></li>
+            <li><a href="portfolio.html" data-i18n="nav_portfolio">Portafolio</a></li>
+            <li><a href="policies.html" data-i18n="nav_policies">Políticas & Legal</a></li>
+            <li><a href="faq.html" data-i18n="nav_faq">Experiencia & FAQ</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contacto</a></li>
+            <li><a href="booking.html" data-i18n="nav_booking">Reservar Cita</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 data-i18n="footer_col_contact">Contacto & Estudio</h4>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <a href="https://maps.google.com/?q=1825+E+Northern+Ave+%23273,+Phoenix,+AZ+85020" target="_blank" rel="noopener" style="color: #FFFFFF; text-decoration: underline;">
+              <i class="fa-solid fa-location-dot" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>1825 E Northern Ave #273, Phoenix, AZ 85020
+            </a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 0.6rem;">
+            <i class="fa-solid fa-envelope" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Email: <a href="mailto:Isavision21@gmail.com" style="color: #FFFFFF;">Isavision21@gmail.com</a>
+          </p>
+          <p style="font-size: 0.88rem; color: var(--text-light-muted); margin-bottom: 1.2rem;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 0.5rem; color: var(--accent-sand);"></i>Tel / WhatsApp: <a href="https://wa.me/16025823407" style="color: #FFFFFF;">+1 (602) 582-3407</a>
+          </p>
+          <a href="booking.html" class="btn btn-sm btn-primary" data-i18n="btn_book_header">RESERVAR CITA</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span data-i18n="footer_copyright">© Isa Hernandez Photo & Makeup LLC · Phoenix, AZ</span>
+        <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+          <a href="policies.html" style="color: rgba(255,255,255,0.85); text-decoration: underline;" data-i18n="footer_terms_link">Políticas Oficiales & Términos</a>
+          <a href="policies.html#datos" style="color: rgba(255,255,255,0.85);" data-i18n="footer_privacy_link">Privacidad</a>
+        </div>
+        <a href="https://maps.google.com/?q=1825+E+Northern+Ave+%23273,+Phoenix,+AZ+85020" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.85); text-decoration: none;">
+          <i class="fa-solid fa-map-pin" style="margin-right: 0.4rem; color: var(--accent-sand);"></i>1825 E Northern Ave #273, Phoenix, AZ 85020
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Language Selector Bubble -->
+  <div class="mobile-floating-lang" aria-label="Language Selector">    <i class="fa-solid fa-globe" style="color: rgba(255,255,255,0.7); font-size: 0.75rem; margin-right: 2px;"></i>    <button class="lang-btn active" data-lang="es">ES</button>
+    <span class="lang-sep">/</span>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
+

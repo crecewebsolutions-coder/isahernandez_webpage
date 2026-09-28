@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Isa Hernandez | Tarjeta Digital NFC &amp; Contacto</title>
+  <meta name="description" content="Tarjeta de presentación digital NFC oficial de Isa Hernandez Photo & Makeup LLC. Fotografía profesional y maquillaje en Phoenix, Arizona.">
+  
+  <!-- Favicons oficiales -->
+  <link rel="icon" type="image/png" sizes="32x32" href="images/brand-icon-32.png?v=5">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/brand-icon-16.png?v=5">
+  <link rel="shortcut icon" href="images/brand-icon-32.png?v=5">
+  <link rel="apple-touch-icon" href="images/brand-touch-icon.png?v=5">
+  <meta name="theme-color" content="#F7F7F8">
+
+  <!-- Tipografía Oficial de la Página Web -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    /* ==========================================================================
+       TARJETA DIGITAL NFC - PALETA EDITORIAL & TIPOGRAFÍA DE LA PÁGINA WEB
+       Estructura fiel a la referencia (Sandy ValVal) + Estética Oficial Web
+       ========================================================================== */
+    :root {
+      /* Colores Oficiales de la Web */
+      --bg-page: #F7F7F8;
+      --bg-card: #FFFFFF;
+      --bg-button: #FFFFFF;
+      --bg-button-hover: #FAF9F7;
+      --bg-badge: #F2F2F7;
+      
+      --text-dark: #111111;
+      --text-primary: #1A1A1A;
+      --text-body: #333333;
+      --text-muted: #6C6C70;
+      --text-dim: #8E8E93;
+      
+      --border-light: #E5E5EA;
+      --border-subtle: #EFEFF4;
+      --border-accent: #111111;
+      --accent-gold: #C5A059;
+      
+      /* Tipografías Oficiales de la Web */
+      --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+      --font-script: 'Alex Brush', cursive;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      --font-display: 'Montserrat', sans-serif;
+
+      --shadow-card: 0 16px 45px rgba(0, 0, 0, 0.06);
+      --shadow-btn: 0 2px 8px rgba(0, 0, 0, 0.03);
+      --shadow-btn-hover: 0 8px 20px rgba(0, 0, 0, 0.08);
+      --transition-smooth: 0.25s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      width: 100%;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 1.25rem 1rem 2.5rem 1rem;
+      background-image: 
+        radial-gradient(circle at 50% 0%, rgba(0, 0, 0, 0.03) 0%, transparent 60%),
+        radial-gradient(circle at 50% 100%, rgba(0, 0, 0, 0.02) 0%, transparent 60%);
+      background-attachment: fixed;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* Outer Wrapper */
+    .card-wrapper {
+      width: 100%;
+      max-width: 390px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      min-width: 0;
+    }
+
+    /* Top Utility Bar (NFC Badge, Language Toggle, QR & Share) */
+    .top-utility-bar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      padding: 0 0.15rem;
+    }
+
+    .nfc-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-family: var(--font-display);
+      font-size: 0.63rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      padding: 0.3rem 0.72rem;
+      border-radius: 50px;
+      box-shadow: var(--shadow-btn);
+    }
+
+    .nfc-badge i {
+      color: var(--text-dark);
+      animation: pulseWifi 2s infinite ease-in-out;
+    }
+
+    @keyframes pulseWifi {
+      0%, 100% { opacity: 0.5; transform: scale(0.95); }
+      50% { opacity: 1; transform: scale(1.15); color: var(--accent-gold); }
+    }
+
+    .top-actions-group {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    /* Language Switcher */
+    .lang-switcher {
+      display: inline-flex;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 50px;
+      padding: 0.18rem;
+      box-shadow: var(--shadow-btn);
+    }
+
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-family: var(--font-display);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 0.22rem 0.6rem;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .lang-btn.active {
+      background: var(--text-dark);
+      color: #FFFFFF;
+      font-weight: 700;
+    }
+
+    .icon-action-btn {
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      color: var(--text-dark);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.82rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: var(--shadow-btn);
+    }
+
+    .icon-action-btn:hover {
+      background: var(--text-dark);
+      color: #FFFFFF;
+      border-color: var(--text-dark);
+      transform: translateY(-1px);
+    }
+
+    /* Main Presentation Card Frame (Matching Reference Layout with Website Palette) */
+    .card-frame {
+      width: 100%;
+      min-width: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      padding: 2.2rem 1.45rem 2.4rem 1.45rem;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: var(--shadow-card);
+    }
+
+    /* Corner Luxury Accents (Exact Reference Structure in Website Charcoal) */
+    .corner-accent {
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      pointer-events: none;
+    }
+
+    .corner-tl {
+      top: 14px;
+      left: 14px;
+      border-top: 1.5px solid var(--text-dark);
+      border-left: 1.5px solid var(--text-dark);
+    }
+
+    .corner-tr {
+      top: 14px;
+      right: 14px;
+      border-top: 1.5px solid var(--text-dark);
+      border-right: 1.5px solid var(--text-dark);
+    }
+
+    .corner-bl {
+      bottom: 14px;
+      left: 14px;
+      border-bottom: 1.5px solid var(--text-dark);
+      border-left: 1.5px solid var(--text-dark);
+      opacity: 0.7;
+    }
+
+    .corner-br {
+      bottom: 14px;
+      right: 14px;
+      border-bottom: 1.5px solid var(--text-dark);
+      border-right: 1.5px solid var(--text-dark);
+      opacity: 0.7;
+    }
+
+    /* Profile Avatar (White Blazer + Camera) */
+    .avatar-container {
+      position: relative;
+      width: 114px;
+      height: 114px;
+      margin-bottom: 0.95rem;
+    }
+
+    .avatar-border {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 2px solid var(--text-dark);
+      padding: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+      background: #FFFFFF;
+    }
+
+    .avatar-photo {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 10%;
+      display: block;
+      background: #FFFFFF;
+    }
+
+    /* Brand Header: Cursive Name + Divider + Tagline + Location */
+    .brand-title-script {
+      font-family: var(--font-script);
+      font-size: 3.3rem;
+      line-height: 1;
+      color: var(--text-dark);
+      margin-bottom: 0.25rem;
+      text-align: center;
+      letter-spacing: 0.01em;
+      transform: rotate(-1deg);
+    }
+
+    .brand-divider-subtitle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      font-family: var(--font-display);
+      font-size: clamp(0.58rem, 2vw, 0.65rem);
+      font-weight: 600;
+      letter-spacing: clamp(0.18em, 2vw, 0.28em);
+      color: var(--text-dark);
+      text-transform: uppercase;
+      margin-bottom: 0.7rem;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .brand-divider-subtitle::before,
+    .brand-divider-subtitle::after {
+      content: "";
+      height: 1px;
+      flex: 1;
+      max-width: 32px;
+      background: linear-gradient(to right, transparent, var(--text-dark));
+    }
+
+    .brand-divider-subtitle::after {
+      background: linear-gradient(to left, transparent, var(--text-dark));
+    }
+
+    .brand-tagline-italic {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 1.02rem;
+      color: #333333;
+      text-align: center;
+      margin-bottom: 0.45rem;
+      letter-spacing: 0.015em;
+      line-height: 1.4;
+    }
+
+    .brand-location-spaced {
+      font-family: var(--font-display);
+      font-size: 0.64rem;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 1.65rem;
+    }
+
+    .brand-location-spaced strong {
+      color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    /* Buttons Container */
+    .buttons-stack {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.72rem;
+    }
+
+    /* 1. Solid Hero CTA Button: Reservar mi Sesión (Paleta Web btn-primary) */
+    .cta-hero-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      background: var(--text-dark);
+      color: #FFFFFF;
+      border: 1px solid var(--text-dark);
+      border-radius: 8px;
+      padding: 1.02rem 1.35rem;
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(17, 17, 17, 0.16);
+      transition: all var(--transition-smooth);
+      margin-bottom: 0.25rem;
+    }
+
+    .cta-hero-btn:hover {
+      background: #2C2C2E;
+      border-color: #2C2C2E;
+      color: #FFFFFF;
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(17, 17, 17, 0.24);
+    }
+
+    .cta-hero-btn i {
+      font-size: 0.95rem;
+    }
+
+    /* 2. Outline Buttons Stack (WhatsApp, Phone, Email, Web, Maps, IG, Portfolio) */
+    .outline-card-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0.92rem 1.25rem;
+      background: var(--bg-button);
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      color: var(--text-primary);
+      text-decoration: none;
+      font-family: var(--font-sans);
+      font-size: 0.91rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      transition: all var(--transition-smooth);
+      box-shadow: var(--shadow-btn);
+    }
+
+    .outline-card-btn:hover {
+      background: var(--bg-button-hover);
+      border-color: var(--text-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-btn-hover);
+    }
+
+    .outline-card-btn .btn-icon {
+      width: 24px;
+      font-size: 1.05rem;
+      color: var(--text-dark);
+      margin-right: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.2s ease;
+    }
+
+    .outline-card-btn:hover .btn-icon {
+      transform: scale(1.12);
+    }
+
+    .outline-card-btn .btn-label {
+      flex: 1;
+      color: var(--text-primary);
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .outline-card-btn .btn-badge {
+      font-family: var(--font-display);
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: var(--bg-badge);
+      border: 1px solid var(--border-light);
+      padding: 0.2rem 0.55rem;
+      border-radius: 50px;
+    }
+
+    /* 9. Save Contact Button Highlight (vCard for NFC) */
+    .save-vcard-btn {
+      border: 1.5px solid var(--text-dark);
+      background: #FAF9F6;
+      cursor: pointer;
+    }
+
+    .save-vcard-btn .btn-badge {
+      background: var(--text-dark);
+      color: #FFFFFF;
+      border-color: var(--text-dark);
+      font-weight: 700;
+    }
+
+    .save-vcard-btn:hover {
+      background: var(--text-dark);
+      color: #FFFFFF;
+    }
+
+    .save-vcard-btn:hover .btn-label,
+    .save-vcard-btn:hover .btn-icon {
+      color: #FFFFFF;
+    }
+
+    .save-vcard-btn:hover .btn-badge {
+      background: #FFFFFF;
+      color: var(--text-dark);
+      border-color: #FFFFFF;
+    }
+
+    /* Studio Retainer Note */
+    .studio-policy-note {
+      margin-top: 1.45rem;
+      padding-top: 1.15rem;
+      border-top: 1px solid var(--border-subtle);
+      width: 100%;
+      text-align: center;
+    }
+
+    .studio-policy-note p {
+      font-size: 0.73rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .studio-policy-note strong {
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    /* Footer */
+    .footer-section {
+      width: 100%;
+      text-align: center;
+      margin-top: 1.6rem;
+    }
+
+    .footer-copy {
+      font-size: 0.72rem;
+      color: var(--text-dim);
+      letter-spacing: 0.04em;
+      line-height: 1.45;
+    }
+
+    /* QR Code Modal Popup */
+    .qr-modal {
+      position: fixed;
+      inset: 0;
+      background: rgba(17, 17, 17, 0.65);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .qr-modal.active {
+      display: flex;
+    }
+
+    .qr-modal-box {
+      background: #FFFFFF;
+      border: 1px solid var(--border-light);
+      border-radius: 16px;
+      padding: 2.2rem 1.8rem;
+      max-width: 320px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.2);
+    }
+
+    .qr-modal-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: #F2F2F7;
+      border: none;
+      color: var(--text-dark);
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 0.85rem;
+      transition: all 0.2s ease;
+    }
+
+    .qr-modal-close:hover {
+      background: #E5E5EA;
+    }
+
+    .modal-qr-container {
+      background: #FFFFFF;
+      padding: 12px;
+      border: 1px solid var(--border-light);
+      border-radius: 12px;
+      display: inline-block;
+      margin: 1.2rem 0;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    .modal-qr-container img {
+      width: 180px;
+      height: 180px;
+      display: block;
+    }
+
+    /* Toast Notification */
+    .toast-msg {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--text-dark);
+      color: #FFFFFF;
+      padding: 0.75rem 1.5rem;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+      z-index: 2000;
+      transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    .toast-msg.show {
+      transform: translateX(-50%) translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-wrapper">
+    
+    <!-- Barra Superior: NFC Smart Card & Selector de Idioma -->
+    <div class="top-utility-bar">
+      <div class="nfc-badge">
+        <i class="fa-solid fa-wifi"></i>
+        <span>NFC Smart Card</span>
+      </div>
+
+      <div class="top-actions-group">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btnEs" onclick="setLanguage('es')">ES</button>
+          <button class="lang-btn" id="btnEn" onclick="setLanguage('en')">EN</button>
+        </div>
+
+        <button class="icon-action-btn" onclick="openQrModal()" title="Escanear Código QR" aria-label="Código QR">
+          <i class="fa-solid fa-qrcode"></i>
+        </button>
+
+        <button class="icon-action-btn" onclick="shareCard()" title="Compartir Tarjeta" aria-label="Compartir">
+          <i class="fa-solid fa-arrow-up-from-bracket"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Tarjeta Principal con Esquinas de Lujo y Paleta de la Web -->
+    <main class="card-frame">
+      
+      <!-- 4 Esquinas de Lujo -->
+      <div class="corner-accent corner-tl"></div>
+      <div class="corner-accent corner-tr"></div>
+      <div class="corner-accent corner-bl"></div>
+      <div class="corner-accent corner-br"></div>
+
+      <!-- Foto de Perfil (Isa en Traje Blanco con Cámara Nikon) -->
+      <div class="avatar-container">
+        <div class="avatar-border">
+          <img src="images/isa-index.jpg" alt="Isa Hernandez - Fotógrafa & Makeup Artist" class="avatar-photo">
+        </div>
+      </div>
+
+      <!-- Nombre en Cursiva Elegante de la Web -->
+      <h1 class="brand-title-script">Isa Hernandez</h1>
+
+      <!-- Subtítulo con Líneas Divisorias Flanqueantes -->
+      <div class="brand-divider-subtitle">PHOTOGRAPHY STUDIO</div>
+
+      <!-- Lema en Serif Cursiva -->
+      <p class="brand-tagline-italic" id="lblTagline">
+        Fotografía con propósito. Retratos con alma.
+      </p>
+
+      <!-- Ubicación Espaciada en Mayúsculas con Suite #273 -->
+      <div class="brand-location-spaced">
+        PHOENIX, ARIZONA · <strong>SUITE #273</strong>
+      </div>
+
+      <!-- Pila Vertical de Botones de Contacto -->
+      <div class="buttons-stack">
+        
+        <!-- 1. Botón Principal Hero: Reservar mi Sesión -->
+        <a href="booking.html" class="cta-hero-btn">
+          <i class="fa-regular fa-calendar-check"></i>
+          <span id="btnReserveText">Reservar mi Sesión</span>
+        </a>
+
+        <!-- 2. WhatsApp Directo -->
+        <a href="https://wa.me/16025823407?text=Hola%20Isa,%20escane%C3%A9%20tu%20tarjeta%20NFC%20y%20me%20gustar%C3%ADa%20cotizar%20una%20sesi%C3%B3n" target="_blank" rel="noopener" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-brands fa-whatsapp"></i></span>
+          <span class="btn-label">WhatsApp</span>
+          <span class="btn-badge" id="badgeDirect">Chat Directo</span>
+        </a>
+
+        <!-- 3. Teléfono Directo -->
+        <a href="tel:+16025823407" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-solid fa-phone"></i></span>
+          <span class="btn-label">+1 (602) 582-3407</span>
+        </a>
+
+        <!-- 4. Correo Electrónico -->
+        <a href="mailto:Isavision21@gmail.com?subject=Consulta%20Isa%20Hernandez%20Photo%20%26%20Makeup" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-regular fa-envelope"></i></span>
+          <span class="btn-label">Isavision21@gmail.com</span>
+        </a>
+
+        <!-- 5. Sitio Web Oficial -->
+        <a href="index.html" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-solid fa-globe"></i></span>
+          <span class="btn-label">isahernandezphotography.com</span>
+        </a>
+
+        <!-- 6. Dirección del Estudio con Suite #273 en Google Maps -->
+        <a href="https://maps.google.com/?q=1825+E+Northern+Ave+%23273,+Phoenix,+AZ+85020" target="_blank" rel="noopener" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-solid fa-location-dot"></i></span>
+          <span class="btn-label">1825 E Northern Ave #273, Phoenix</span>
+        </a>
+
+        <!-- 7. Instagram Oficial -->
+        <a href="https://www.instagram.com/isahphotographer/" target="_blank" rel="noopener" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-brands fa-instagram"></i></span>
+          <span class="btn-label">@isahphotographer</span>
+        </a>
+
+        <!-- 8. Portafolio de Trabajos -->
+        <a href="portfolio.html" class="outline-card-btn">
+          <span class="btn-icon"><i class="fa-solid fa-images"></i></span>
+          <span class="btn-label" id="lblPortfolio">Ver Portafolio de Trabajos</span>
+        </a>
+
+        <!-- 9. Guardar Contacto en el Teléfono (vCard NFC) -->
+        <button onclick="downloadVCard()" class="outline-card-btn save-vcard-btn">
+          <span class="btn-icon"><i class="fa-solid fa-address-card"></i></span>
+          <span class="btn-label" id="lblSaveVCard">Guardar en Contactos (vCard)</span>
+          <span class="btn-badge">NFC SAVE</span>
+        </button>
+
+      </div>
+
+      <!-- Nota de Política de Anticipo del Estudio -->
+      <div class="studio-policy-note">
+        <p id="lblPolicyDesc">
+          Para asegurar tu fecha en agenda se requiere un <strong>anticipo no reembolsable de $50 USD</strong> (vía Zelle o Cash), acreditable a tu paquete.
+        </p>
+      </div>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer-section">
+      <p class="footer-copy">
+        &copy; 2026 Isa Hernandez Photo &amp; Makeup LLC<br>
+        <span style="color: var(--text-muted); font-weight: 500;">1825 E Northern Ave #273 · Phoenix, AZ 85020</span>
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- Modal con Código QR -->
+  <div class="qr-modal" id="qrModal" onclick="closeQrModal(event)">
+    <div class="qr-modal-box">
+      <button class="qr-modal-close" onclick="closeQrModal(null)" aria-label="Cerrar">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <img src="images/logo.png" alt="Isa Hernandez Logo" style="height: 38px; width: auto; max-width: 160px; object-fit: contain; margin-bottom: 0.6rem;">
+      <h3 style="font-family: var(--font-serif); font-size: 1.28rem; color: var(--text-dark); margin-bottom: 0.25rem;" id="lblQrTitle">
+        Escanear Tarjeta Digital
+      </h3>
+      <p style="font-size: 0.74rem; color: var(--text-muted); line-height: 1.45;" id="lblQrDesc">
+        Apunta la cámara de tu smartphone para abrir esta tarjeta de presentación al instante.
+      </p>
+
+      <div class="modal-qr-container">
+        <img src="https://api.qrserver.com/v1/create-qr-code/?size=240x240&amp;data=https%3A%2F%2Fisahernandezphotography.com%2Fcard.html&amp;color=111111" alt="Código QR Isa Hernandez" onerror="this.src='images/brand-icon.png'">
+      </div>
+
+      <p style="font-size: 0.72rem; color: var(--text-dark); font-weight: 600; letter-spacing: 0.05em;">
+        1825 E Northern Ave #273 · Phoenix, AZ
+      </p>
+    </div>
+  </div>
+
+  <!-- Mensaje Flotante Toast -->
+  <div class="toast-msg" id="toastMsg">
+    <i class="fa-solid fa-circle-check"></i>
+    <span id="toastText">Enlace copiado al portapapeles</span>
+  </div>
+
+  <!-- Lógica Bilingüe (ES / EN) y Descarga vCard para NFC -->
+  <script>
+    const translations = {
+      es: {
+        tagline: "Fotografía con propósito. Retratos con alma.",
+        btnReserve: "Reservar mi Sesión",
+        badgeDirect: "Chat Directo",
+        lblPortfolio: "Ver Portafolio de Trabajos",
+        lblSaveVCard: "Guardar en Contactos (vCard)",
+        policyDesc: "Para asegurar tu fecha en agenda se requiere un <strong>anticipo no reembolsable de $50 USD</strong> (vía Zelle o Cash), acreditable a tu paquete.",
+        qrTitle: "Escanear Tarjeta Digital",
+        qrDesc: "Apunta la cámara de tu smartphone para abrir esta tarjeta de presentación al instante.",
+        toastCopied: "¡Enlace copiado al portapapeles!",
+        toastVCard: "¡Contacto de Isa Hernandez guardado!"
+      },
+      en: {
+        tagline: "Photography with purpose. Portraits with soul.",
+        btnReserve: "Book My Session",
+        badgeDirect: "Direct Chat",
+        lblPortfolio: "View Work Portfolio",
+        lblSaveVCard: "Save to Contacts (vCard)",
+        policyDesc: "To lock in your date on our calendar, a <strong>$50 USD non-refundable retainer</strong> is required (via Zelle or Cash), credited toward your package.",
+        qrTitle: "Scan Digital Business Card",
+        qrDesc: "Scan with your smartphone camera to instantly access this business card.",
+        toastCopied: "Link copied to clipboard!",
+        toastVCard: "Isa Hernandez contact saved!"
+      }
+    };
+
+    let currentLang = 'es';
+
+    function setLanguage(lang) {
+      currentLang = lang;
+      document.getElementById('btnEs').classList.toggle('active', lang === 'es');
+      document.getElementById('btnEn').classList.toggle('active', lang === 'en');
+      
+      const t = translations[lang];
+      document.getElementById('lblTagline').innerText = t.tagline;
+      document.getElementById('btnReserveText').innerText = t.btnReserve;
+      document.getElementById('badgeDirect').innerText = t.badgeDirect;
+      document.getElementById('lblPortfolio').innerText = t.lblPortfolio;
+      document.getElementById('lblSaveVCard').innerText = t.lblSaveVCard;
+      document.getElementById('lblPolicyDesc').innerHTML = t.policyDesc;
+      document.getElementById('lblQrTitle').innerText = t.qrTitle;
+      document.getElementById('lblQrDesc').innerText = t.qrDesc;
+    }
+
+    function downloadVCard() {
+      const vcard = [
+        'BEGIN:VCARD',
+        'VERSION:3.0',
+        'FN:Isa Hernandez Photo & Makeup LLC',
+        'N:Hernandez;Isa;;;',
+        'ORG:Isa Hernandez Photo & Makeup LLC',
+        'TITLE:Fotógrafa Editorial & Artista de Maquillaje',
+        'TEL;TYPE=CELL,VOICE,PREF:+16025823407',
+        'EMAIL;TYPE=INTERNET,WORK:Isavision21@gmail.com',
+        'ADR;TYPE=WORK,POSTAL,PARCEL:;;1825 E Northern Ave #273;Phoenix;AZ;85020;USA',
+        'URL:https://www.instagram.com/isahphotographer/',
+        'NOTE:Estudio fotográfico profesional y maquillaje en Phoenix, AZ. Suite #273. Reserva con $50 USD.',
+        'END:VCARD'
+      ].join('\r\n');
+
+      const blob = new Blob([vcard], { type: 'text/vcard;charset=utf-8;' });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Isa_Hernandez_Photo_Makeup.vcf');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+
+      showToast(translations[currentLang].toastVCard);
+    }
+
+    async function shareCard() {
+      const shareData = {
+        title: 'Isa Hernandez Photo & Makeup LLC',
+        text: 'Tarjeta digital NFC de Isa Hernandez en Phoenix, AZ:',
+        url: window.location.href
+      };
+
+      if (navigator.share && navigator.canShare && navigator.canShare(shareData)) {
+        try {
+          await navigator.share(shareData);
+          return;
+        } catch (err) {}
+      }
+
+      navigator.clipboard.writeText(window.location.href).then(() => {
+        showToast(translations[currentLang].toastCopied);
+      }).catch(() => {
+        showToast(translations[currentLang].toastCopied);
+      });
+    }
+
+    function openQrModal() {
+      document.getElementById('qrModal').classList.add('active');
+    }
+
+    function closeQrModal(e) {
+      if (!e || e.target.id === 'qrModal' || e.target.closest('.qr-modal-close')) {
+        document.getElementById('qrModal').classList.remove('active');
+      }
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById('toastMsg');
+      const text = document.getElementById('toastText');
+      text.textContent = msg;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2600);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const hash = window.location.hash.toLowerCase();
+      if (urlParams.get('qr') === 'true' || hash === '#qr') {
+        openQrModal();
+      }
+      if (urlParams.get('lang') === 'en') {
+        setLanguage('en');
+      }
+    });
+  </script>
+</body>
+</html>
