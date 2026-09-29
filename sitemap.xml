@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- 1. Inicio / Home Page -->
+  <url>
+    <loc>https://isahernandezphotography.com/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 2. Agendar Cita en Vivo / Live Booking Wizard -->
+  <url>
+    <loc>https://isahernandezphotography.com/booking.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.95</priority>
+  </url>
+
+  <!-- 3. Servicios y Lista de Precios Oficial -->
+  <url>
+    <loc>https://isahernandezphotography.com/services.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 4. Portafolio de Fotografías & MakeUp -->
+  <url>
+    <loc>https://isahernandezphotography.com/portfolio.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.90</priority>
+  </url>
+
+  <!-- 5. Sobre Mí / Isa Hernandez Bio & Historia -->
+  <url>
+    <loc>https://isahernandezphotography.com/about.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 6. Contacto & Ubicación del Estudio en Phoenix, AZ -->
+  <url>
+    <loc>https://isahernandezphotography.com/contact.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- 7. Preguntas Frecuentes, Experiencia & Preparación -->
+  <url>
+    <loc>https://isahernandezphotography.com/faq.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- 8. Tarjeta de Presentación Digital (Link in Bio) -->
+  <url>
+    <loc>https://isahernandezphotography.com/tarjeta.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <!-- 9. Políticas de Reserva, Entregas & Términos Legales -->
+  <url>
+    <loc>https://isahernandezphotography.com/policies.html</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.60</priority>
+  </url>
+
+</urlset>
