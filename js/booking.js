@@ -1,8 +1,4 @@
-/* ==========================================================================
-   ISA HERNANDEZ PHOTO & MAKEUP LLC
-   Interactive Booking & Reservation System (Bilingual ES / EN Support)
-   With Cascading Personalized Questions & Instant 'Other (Write-in)' Options
-   ========================================================================== */
+
 
 document.addEventListener('DOMContentLoaded', () => {
   const wizard = document.querySelector('.booking-wizard-wrapper');
@@ -1251,24 +1247,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* =========================================================================================
-     =========================================================================================
-     >>> LIVE GOOGLE CALENDAR ENGINE — MODELO OPT-IN 1:1 CON SANDY VALVAL STUDIO <<<
-     =========================================================================================
-     Credenciales y Calendario Oficial de Isa Hernandez Photo & Makeup LLC:
-     - Calendar ID: isahernandezphotographer@gmail.com
-     - API Key: AIzaSyAVBYoAGH8PEHQAcLIQJ0wvrRmSrr39nRQ
-     - Zona horaria: America/Phoenix (MST / UTC-7)
-
-     REGLA DE ORO / AVAILABILITY MODEL:
-     1. Solo los días en los que Isa crea un evento que contenga "Disponibilidad" o "Disponible"
-        se abren en el calendario web para los clientes (disponibilidad opt-in).
-     2. Un evento de día completo ("All day") "Disponibilidad" abre los horarios estándar del estudio
-        (9:00 AM – 5:00 PM en bloques de 1 hora).
-     3. Un evento con horario específico (ej. 2:30 PM) abre exactamente esa franja.
-     4. Cualquier otro evento en el calendario de Isa actúa como bloqueador de seguridad.
-     5. Todos los demás días permanecen desactivados (gris / cal-day--off / no seleccionables).
-     ========================================================================================= */
 
   const GOOGLE_CALENDAR_CONFIG = {
     apiKey: 'AIzaSyAVBYoAGH8PEHQAcLIQJ0wvrRmSrr39nRQ',
