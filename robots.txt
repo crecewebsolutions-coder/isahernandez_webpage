@@ -1,15 +1,15 @@
 # robots.txt for Isa Hernandez Photo & Makeup LLC
-# Website: https://isahernandezphotography.com
+# Website: https://www.isahernandezphotography.com
 
 User-agent: *
 Allow: /
 
-# Block sensitive scripts or internal cache if any
+# Bloqueo de archivos internos o sensibles
 Disallow: /*.json$
 Disallow: /admin/
 Disallow: /private/
 
-# Googlebot & Image indexing
+# Googlebot & Indexación de imágenes
 User-agent: Googlebot
 Allow: /
 
@@ -19,5 +19,5 @@ Allow: /images/
 User-agent: Bingbot
 Allow: /
 
-# Sitemap reference
-Sitemap: https://isahernandezphotography.com/sitemap.xml
+# Enlace al mapa del sitio oficial con www
+Sitemap: https://www.isahernandezphotography.com/sitemap.xml
