@@ -19,6 +19,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
+  <!-- MailerLite Universal -->
+  <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '2801596');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body>
 
@@ -136,53 +145,42 @@
           <div style="margin: 0.6rem 0 1rem 0;">
             <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(197,160,89,0.12); border: 1px solid var(--accent-gold); color: var(--text-dark); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
               <i class="fa-solid fa-tag" style="color: var(--accent-gold);"></i>
-              <span data-i18n="pkg_bday_range">Rango de Inversión: $225 – $460 USD</span>
+              <span data-i18n="pkg_bday_range">Rango de Inversión: $480 – $225 USD</span>
             </span>
           </div>
           <p class="category-desc" data-i18n="sub_bday_desc">Celebra un nuevo año de vida con sets preparados en estudio, copas, props temáticos y pasteles artificiales en Phoenix.</p>
         </div>
 
+        <!-- Banner Preventa / Promoción con Fecha Límite -->
+        <div class="promo-sale-banner reveal">
+          <div class="promo-header-row">
+            <span class="promo-kicker"><i class="fa-solid fa-sparkles"></i> <span data-i18n="promo_bday_kicker">PREVENTA ESPECIAL DE TEMPORADA</span></span>
+            <span class="promo-deadline-pill"><i class="fa-regular fa-clock"></i> <span data-i18n="promo_bday_deadline">Tarifa Válida Agendando Antes de Fecha Límite</span></span>
+          </div>
+          <h4 class="promo-title" data-i18n="promo_bday_title">¡Asegura tu Sesión de Cumpleaños con Tarifa Especial de Preventa!</h4>
+          <p class="promo-desc" data-i18n="promo_bday_desc">
+            Agenda tu fecha con anticipación y ahorra $20 USD con tarifa especial de preventa. Pasada la fecha límite aplica el precio regular (+ $20 USD). ¡Tu fecha se reserva con solo $50 USD de anticipo!
+          </p>
+        </div>
+
+        <!-- Paquetes Ordenados de MAYOR a MENOR Precio -->
         <div class="packages-teaser-grid">
-          <!-- Golden $225 -->
+          <!-- 1. Diamond $460 (Mayor) -->
           <div class="package-card reveal delay-1">
             <div>
-              <h4 class="package-name" data-i18n="pkg_b_golden_name">Golden</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_golden_time">45 MINUTOS</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_b_golden_f1">8 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_b_golden_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
-                <li data-i18n="pkg_b_golden_f2">Galería en línea privada</li>
-                <li data-i18n="pkg_b_golden_f3">1 outfit (cambio de ropa)</li>
-                <li data-i18n="pkg_b_golden_f4">Guía de poses personalizada</li>
-                <li data-i18n="pkg_b_golden_f5">Entrega máx 2 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=birthdays&amp;package=golden" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- Platinum $290 (Featured) -->
-          <div class="package-card featured reveal delay-2">
-            <div>
-              <h4 class="package-name" data-i18n="pkg_b_plat_name">Platinum</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_plat_time">1 HORA</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_b_plat_f1">10 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_b_plat_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
-                <li data-i18n="pkg_b_plat_f2">Galería en línea privada</li>
-                <li data-i18n="pkg_b_plat_f3">2 outfits (cambios de ropa)</li>
-                <li data-i18n="pkg_b_plat_f4">Guía de poses personalizada</li>
-                <li data-i18n="pkg_b_plat_f5">Asesoría previa de fotos &amp; vestuario</li>
-                <li data-i18n="pkg_b_plat_f6">Entrega máx 1.5 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=birthdays&amp;package=platinum" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- Diamond $460 -->
-          <div class="package-card reveal delay-3">
-            <div>
               <h4 class="package-name" data-i18n="pkg_b_diam_name">Diamond</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_diam_time">1.5 HORAS</div>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_b_diam_time">1.5 HORAS</div>
+
+              <!-- Price Box with Early Booking / Preventa Special -->
+              <div class="package-price-box promo-active">
+                <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+                <div>
+                  <span class="price-val">$460</span> <span class="price-cur">USD</span>
+                  <span class="price-strike">$480 USD</span>
+                </div>
+                <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+              </div>
+
               <ul class="package-features">
                 <li data-i18n="pkg_b_diam_f1">12 imágenes digitales profesionalmente editadas + 3 B&amp;W adicionales</li>
                 <li data-i18n="pkg_b_diam_f_backdrop"><strong>2 fondos</strong> de estudio profesionales</li>
@@ -197,6 +195,63 @@
             </div>
             <a href="booking.html?service=birthdays&amp;package=diamond" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
           </div>
+
+          <!-- 2. Platinum $290 (Featured / Más Popular) -->
+          <div class="package-card featured reveal delay-2">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_b_plat_name">Platinum</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_b_plat_time">1 HORA</div>
+
+              <!-- Price Box with Early Booking / Preventa Special -->
+              <div class="package-price-box promo-active">
+                <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+                <div>
+                  <span class="price-val">$290</span> <span class="price-cur">USD</span>
+                  <span class="price-strike">$310 USD</span>
+                </div>
+                <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_b_plat_f1">10 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_b_plat_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
+                <li data-i18n="pkg_b_plat_f2">Galería en línea privada</li>
+                <li data-i18n="pkg_b_plat_f3">2 outfits (cambios de ropa)</li>
+                <li data-i18n="pkg_b_plat_f4">Guía de poses personalizada</li>
+                <li data-i18n="pkg_b_plat_f5">Asesoría previa de fotos &amp; vestuario</li>
+                <li data-i18n="pkg_b_plat_f6">Entrega máx 1.5 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=birthdays&amp;package=platinum" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
+
+          <!-- 3. Golden $225 (Menor) -->
+          <div class="package-card reveal delay-3">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_b_golden_name">Golden</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_b_golden_time">45 MINUTOS</div>
+
+              <!-- Price Box with Early Booking / Preventa Special -->
+              <div class="package-price-box promo-active">
+                <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+                <div>
+                  <span class="price-val">$225</span> <span class="price-cur">USD</span>
+                  <span class="price-strike">$245 USD</span>
+                </div>
+                <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_b_golden_f1">8 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_b_golden_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
+                <li data-i18n="pkg_b_golden_f2">Galería en línea privada</li>
+                <li data-i18n="pkg_b_golden_f3">1 outfit (cambio de ropa)</li>
+                <li data-i18n="pkg_b_golden_f4">Guía de poses personalizada</li>
+                <li data-i18n="pkg_b_golden_f5">Entrega máx 2 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=birthdays&amp;package=golden" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
         </div>
       </div>
 
@@ -210,55 +265,27 @@
           <div style="margin: 0.6rem 0 1rem 0;">
             <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(197,160,89,0.12); border: 1px solid var(--accent-gold); color: var(--text-dark); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
               <i class="fa-solid fa-tag" style="color: var(--accent-gold);"></i>
-              <span data-i18n="pkg_couples_range">Rango de Inversión: $260 – $480 USD</span>
+              <span data-i18n="pkg_couples_range">Rango de Inversión: $480 – $260 USD</span>
             </span>
           </div>
           <p class="category-desc" data-i18n="sub_couples_desc">Noviazgos, aniversarios y complicidad auténtica. En estudio minimalista o impresionantes exteriores desérticos de Arizona.</p>
         </div>
 
+        <!-- Paquetes Ordenados de MAYOR a MENOR Precio -->
         <div class="packages-teaser-grid">
-          <!-- The Date $260 -->
+          <!-- 1. The Experience $480 (Mayor) -->
           <div class="package-card reveal delay-1">
             <div>
-              <h4 class="package-name" data-i18n="pkg_c_date_name">The Date</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_c_date_time">45 MINUTOS</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_c_date_f1">8 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_c_date_f_backdrop"><strong>1 fondo</strong> (estudio o exteriores)</li>
-                <li data-i18n="pkg_c_date_f2">Sesión en estudio o exteriores</li>
-                <li data-i18n="pkg_c_date_f3">1 outfit (cambio de ropa)</li>
-                <li data-i18n="pkg_c_date_f4">Guía de poses personalizada</li>
-                <li data-i18n="pkg_c_date_f5">Galería privada en línea</li>
-                <li data-i18n="pkg_c_date_f6">Entrega máx 2 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=couples&amp;package=the-date" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- The Story $320 (Featured) -->
-          <div class="package-card featured reveal delay-2">
-            <div>
-              <h4 class="package-name" data-i18n="pkg_c_story_name">The Story</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_c_story_time">1 HORA</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_c_story_f1">10 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_c_story_f_backdrop"><strong>1 fondo</strong> (estudio o exteriores)</li>
-                <li data-i18n="pkg_c_story_f2">Sesión en estudio o exteriores</li>
-                <li data-i18n="pkg_c_story_f3">2 outfits (cambios de ropa)</li>
-                <li data-i18n="pkg_c_story_f4">Guía de poses personalizada</li>
-                <li data-i18n="pkg_c_story_f5">Asesoría previa de poses</li>
-                <li data-i18n="pkg_c_story_f6">Asesoría de vestuario &amp; accesorios</li>
-                <li data-i18n="pkg_c_story_f7">Entrega máx 1.5 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=couples&amp;package=the-story" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- The Experience $480 -->
-          <div class="package-card reveal delay-3">
-            <div>
               <h4 class="package-name" data-i18n="pkg_c_exp_name">The Experience</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_c_exp_time">1.5 HORAS</div>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_c_exp_time">1.5 HORAS</div>
+
+              <!-- Price Box -->
+              <div class="package-price-box">
+                <div>
+                  <span class="price-val">$480</span> <span class="price-cur">USD</span>
+                </div>
+              </div>
+
               <ul class="package-features">
                 <li data-i18n="pkg_c_exp_f1">12 imágenes digitales profesionalmente editadas + 3 B&amp;W adicionales</li>
                 <li data-i18n="pkg_c_exp_f_backdrop"><strong>2 fondos</strong> (estudio y exteriores)</li>
@@ -273,6 +300,59 @@
             </div>
             <a href="booking.html?service=couples&amp;package=the-experience" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
           </div>
+
+          <!-- 2. The Story $320 (Featured / Recomendado) -->
+          <div class="package-card featured reveal delay-2">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_c_story_name">The Story</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_c_story_time">1 HORA</div>
+
+              <!-- Price Box -->
+              <div class="package-price-box">
+                <div>
+                  <span class="price-val">$320</span> <span class="price-cur">USD</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_c_story_f1">10 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_c_story_f_backdrop"><strong>1 fondo</strong> (estudio o exteriores)</li>
+                <li data-i18n="pkg_c_story_f2">Sesión en estudio o exteriores</li>
+                <li data-i18n="pkg_c_story_f3">2 outfits (cambios de ropa)</li>
+                <li data-i18n="pkg_c_story_f4">Guía de poses personalizada</li>
+                <li data-i18n="pkg_c_story_f5">Asesoría previa de poses</li>
+                <li data-i18n="pkg_c_story_f6">Asesoría de vestuario &amp; accesorios</li>
+                <li data-i18n="pkg_c_story_f7">Entrega máx 1.5 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=couples&amp;package=the-story" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
+
+          <!-- 3. The Date $260 (Menor) -->
+          <div class="package-card reveal delay-3">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_c_date_name">The Date</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_c_date_time">45 MINUTOS</div>
+
+              <!-- Price Box -->
+              <div class="package-price-box">
+                <div>
+                  <span class="price-val">$260</span> <span class="price-cur">USD</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_c_date_f1">8 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_c_date_f_backdrop"><strong>1 fondo</strong> (estudio o exteriores)</li>
+                <li data-i18n="pkg_c_date_f2">Sesión en estudio o exteriores</li>
+                <li data-i18n="pkg_c_date_f3">1 outfit (cambio de ropa)</li>
+                <li data-i18n="pkg_c_date_f4">Guía de poses personalizada</li>
+                <li data-i18n="pkg_c_date_f5">Galería privada en línea</li>
+                <li data-i18n="pkg_c_date_f6">Entrega máx 2 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=couples&amp;package=the-date" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
         </div>
       </div>
 
@@ -286,55 +366,42 @@
           <div style="margin: 0.6rem 0 1rem 0;">
             <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(197,160,89,0.12); border: 1px solid var(--accent-gold); color: var(--text-dark); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
               <i class="fa-solid fa-tag" style="color: var(--accent-gold);"></i>
-              <span data-i18n="pkg_fam_range">Rango de Inversión: $290 – $499 USD</span>
+              <span data-i18n="pkg_fam_range">Rango de Inversión: $519 – $290 USD</span>
             </span>
           </div>
           <p class="category-desc" data-i18n="sub_fam_desc">Retratos cálidos y espontáneos para guardar el crecimiento de tus hijos y la unión de tu familia.</p>
         </div>
 
+        <!-- Banner Preventa / Promoción con Fecha Límite -->
+        <div class="promo-sale-banner reveal">
+          <div class="promo-header-row">
+            <span class="promo-kicker"><i class="fa-solid fa-sparkles"></i> <span data-i18n="promo_fam_kicker">PREVENTA ESPECIAL FAMILIAR</span></span>
+            <span class="promo-deadline-pill"><i class="fa-regular fa-clock"></i> <span data-i18n="promo_fam_deadline">Tarifa Válida Agendando Antes de Fecha Límite</span></span>
+          </div>
+          <h4 class="promo-title" data-i18n="promo_fam_title">¡Asegura tu Sesión Familiar de Temporada con Tarifa de Preventa!</h4>
+          <p class="promo-desc" data-i18n="promo_fam_desc">
+            Aprovecha el precio exclusivo y ahorra $20 USD agendando antes de la fecha límite fijada. Después de esta fecha aplica el precio regular (+ $20 USD). ¡Asegura el lugar de tu familia con solo $50 USD de anticipo!
+          </p>
+        </div>
+
+        <!-- Paquetes Ordenados de MAYOR a MENOR Precio -->
         <div class="packages-teaser-grid">
-          <!-- Moments $290 -->
+          <!-- 1. Complete Story $499 (Mayor) -->
           <div class="package-card reveal delay-1">
             <div>
-              <h4 class="package-name" data-i18n="pkg_f_mom_name">Moments</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_f_mom_time">45 MINUTOS · MÁX 4 PERSONAS</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_f_mom_f1">Máximo 4 personas (persona adicional $)</li>
-                <li data-i18n="pkg_f_mom_f_backdrop"><strong>1 fondo</strong> (estudio o parque al aire libre)</li>
-                <li data-i18n="pkg_f_mom_f2">Sesión en estudio o parque al aire libre</li>
-                <li data-i18n="pkg_f_mom_f3">8 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_f_mom_f4">1 outfit</li>
-                <li data-i18n="pkg_f_mom_f5">Guía de poses personalizada</li>
-                <li data-i18n="pkg_f_mom_f6">Entrega máx 2 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=families&amp;package=moments" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- Together $330 (Featured) -->
-          <div class="package-card featured reveal delay-2">
-            <div>
-              <h4 class="package-name" data-i18n="pkg_f_tog_name">Together</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_f_tog_time">1 HORA · MÁX 5 PERSONAS</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_f_tog_f1">Máximo 5 personas (persona adicional $)</li>
-                <li data-i18n="pkg_f_tog_f_backdrop"><strong>1 fondo</strong> (estudio o locación exterior)</li>
-                <li data-i18n="pkg_f_tog_f2">Sesión en estudio o locación exterior</li>
-                <li data-i18n="pkg_f_tog_f3">10 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_f_tog_f4"><strong>2 outfits</strong> (cambios de ropa)</li>
-                <li data-i18n="pkg_f_tog_f5">Guía de poses personalizada</li>
-                <li data-i18n="pkg_f_tog_f6">Asesoría de poses &amp; vestuario/accesorios</li>
-                <li data-i18n="pkg_f_tog_f7">Entrega máx 1.5 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=families&amp;package=together" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- Complete Story $499 -->
-          <div class="package-card reveal delay-3">
-            <div>
               <h4 class="package-name" data-i18n="pkg_f_comp_name">Complete Story</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_f_comp_time">1.5 HORAS · MÁX 5 PERSONAS</div>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_f_comp_time">1.5 HORAS · MÁX 5 PERSONAS</div>
+
+              <!-- Price Box with Early Booking / Preventa Special -->
+              <div class="package-price-box promo-active">
+                <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+                <div>
+                  <span class="price-val">$499</span> <span class="price-cur">USD</span>
+                  <span class="price-strike">$519 USD</span>
+                </div>
+                <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+              </div>
+
               <ul class="package-features">
                 <li data-i18n="pkg_f_comp_f1">Máximo 5 personas (adicionales $)</li>
                 <li data-i18n="pkg_f_comp_f_backdrop"><strong>2 fondos</strong> de atrás profesionales</li>
@@ -349,6 +416,65 @@
               </ul>
             </div>
             <a href="booking.html?service=families&amp;package=complete-story" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
+
+          <!-- 2. Together $330 (Featured / Más Popular) -->
+          <div class="package-card featured reveal delay-2">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_f_tog_name">Together</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_f_tog_time">1 HORA · MÁX 5 PERSONAS</div>
+
+              <!-- Price Box with Early Booking / Preventa Special -->
+              <div class="package-price-box promo-active">
+                <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+                <div>
+                  <span class="price-val">$330</span> <span class="price-cur">USD</span>
+                  <span class="price-strike">$350 USD</span>
+                </div>
+                <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_f_tog_f1">Máximo 5 personas (persona adicional $)</li>
+                <li data-i18n="pkg_f_tog_f_backdrop"><strong>1 fondo</strong> (estudio o locación exterior)</li>
+                <li data-i18n="pkg_f_tog_f2">Sesión en estudio o locación exterior</li>
+                <li data-i18n="pkg_f_tog_f3">10 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_f_tog_f4"><strong>2 outfits</strong> (cambios de ropa)</li>
+                <li data-i18n="pkg_f_tog_f5">Guía de poses personalizada</li>
+                <li data-i18n="pkg_f_tog_f6">Asesoría de poses &amp; vestuario/accesorios</li>
+                <li data-i18n="pkg_f_tog_f7">Entrega máx 1.5 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=families&amp;package=together" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
+
+          <!-- 3. Moments $290 (Menor) -->
+          <div class="package-card reveal delay-3">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_f_mom_name">Moments</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_f_mom_time">45 MINUTOS · MÁX 4 PERSONAS</div>
+
+              <!-- Price Box with Early Booking / Preventa Special -->
+              <div class="package-price-box promo-active">
+                <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+                <div>
+                  <span class="price-val">$290</span> <span class="price-cur">USD</span>
+                  <span class="price-strike">$310 USD</span>
+                </div>
+                <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_f_mom_f1">Máximo 4 personas (persona adicional $)</li>
+                <li data-i18n="pkg_f_mom_f_backdrop"><strong>1 fondo</strong> (estudio o parque al aire libre)</li>
+                <li data-i18n="pkg_f_mom_f2">Sesión en estudio o parque al aire libre</li>
+                <li data-i18n="pkg_f_mom_f3">8 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_f_mom_f4">1 outfit</li>
+                <li data-i18n="pkg_f_mom_f5">Guía de poses personalizada</li>
+                <li data-i18n="pkg_f_mom_f6">Entrega máx 2 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=families&amp;package=moments" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
           </div>
         </div>
 
@@ -368,55 +494,27 @@
           <div style="margin: 0.6rem 0 1rem 0;">
             <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(197,160,89,0.12); border: 1px solid var(--accent-gold); color: var(--text-dark); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
               <i class="fa-solid fa-tag" style="color: var(--accent-gold);"></i>
-              <span data-i18n="pkg_brand_range">Rango de Inversión: $180 – $380 USD</span>
+              <span data-i18n="pkg_brand_range">Rango de Inversión: $380 – $180 USD</span>
             </span>
           </div>
           <p class="category-desc" data-i18n="sub_brand_desc">Headshots ejecutivos y retratos profesionales de alto impacto para emprendedores, creativos y directivos.</p>
         </div>
 
+        <!-- Paquetes Ordenados de MAYOR a MENOR Precio -->
         <div class="packages-teaser-grid">
-          <!-- Essential $180 -->
+          <!-- 1. Executive $380 (Mayor) -->
           <div class="package-card reveal delay-1">
             <div>
-              <h4 class="package-name" data-i18n="pkg_p_ess_name">Essential</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_p_ess_time">30 MINUTOS</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_p_ess_f1">6 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_p_ess_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
-                <li data-i18n="pkg_p_ess_f2">Sesión en estudio fotográfico profesional</li>
-                <li data-i18n="pkg_p_ess_f3">1 outfit</li>
-                <li data-i18n="pkg_p_ess_f4">Guía de poses ejecutiva</li>
-                <li data-i18n="pkg_p_ess_f5">Galería en línea privada</li>
-                <li data-i18n="pkg_p_ess_f6">Entrega máx 2 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=professionals&amp;package=essential" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- Elevated $240 (Featured) -->
-          <div class="package-card featured reveal delay-2">
-            <div>
-              <h4 class="package-name" data-i18n="pkg_p_elev_name">Elevated</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_p_elev_time">45 MINUTOS</div>
-              <ul class="package-features">
-                <li data-i18n="pkg_p_elev_f1">8 imágenes digitales profesionalmente editadas</li>
-                <li data-i18n="pkg_p_elev_f_backdrop"><strong>1 fondo</strong> (estudio o locación)</li>
-                <li data-i18n="pkg_p_elev_f2">Sesión en estudio o locación</li>
-                <li data-i18n="pkg_p_elev_f3">2 outfits (cambios de ropa)</li>
-                <li data-i18n="pkg_p_elev_f4">Guía de poses personalizada</li>
-                <li data-i18n="pkg_p_elev_f5">Asesoría previa de fotos &amp; poses</li>
-                <li data-i18n="pkg_p_elev_f6">Asesoría de vestuario &amp; accesorios</li>
-                <li data-i18n="pkg_p_elev_f7">Entrega máx 1.5 semanas</li>
-              </ul>
-            </div>
-            <a href="booking.html?service=professionals&amp;package=elevated" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-          </div>
-
-          <!-- Executive $380 -->
-          <div class="package-card reveal delay-3">
-            <div>
               <h4 class="package-name" data-i18n="pkg_p_exec_name">Executive</h4>
-              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_p_exec_time">1 HORA</div>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_p_exec_time">1 HORA</div>
+
+              <!-- Price Box -->
+              <div class="package-price-box">
+                <div>
+                  <span class="price-val">$380</span> <span class="price-cur">USD</span>
+                </div>
+              </div>
+
               <ul class="package-features">
                 <li data-i18n="pkg_p_exec_f1">10 imágenes digitales profesionalmente editadas</li>
                 <li data-i18n="pkg_p_exec_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
@@ -431,6 +529,59 @@
               </ul>
             </div>
             <a href="booking.html?service=professionals&amp;package=executive" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
+
+          <!-- 2. Elevated $240 (Featured / Más Popular) -->
+          <div class="package-card featured reveal delay-2">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_p_elev_name">Elevated</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_p_elev_time">45 MINUTOS</div>
+
+              <!-- Price Box -->
+              <div class="package-price-box">
+                <div>
+                  <span class="price-val">$240</span> <span class="price-cur">USD</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_p_elev_f1">8 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_p_elev_f_backdrop"><strong>1 fondo</strong> (estudio o locación)</li>
+                <li data-i18n="pkg_p_elev_f2">Sesión en estudio o locación</li>
+                <li data-i18n="pkg_p_elev_f3">2 outfits (cambios de ropa)</li>
+                <li data-i18n="pkg_p_elev_f4">Guía de poses personalizada</li>
+                <li data-i18n="pkg_p_elev_f5">Asesoría previa de fotos &amp; poses</li>
+                <li data-i18n="pkg_p_elev_f6">Asesoría de vestuario &amp; accesorios</li>
+                <li data-i18n="pkg_p_elev_f7">Entrega máx 1.5 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=professionals&amp;package=elevated" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+          </div>
+
+          <!-- 3. Essential $180 (Menor) -->
+          <div class="package-card reveal delay-3">
+            <div>
+              <h4 class="package-name" data-i18n="pkg_p_ess_name">Essential</h4>
+              <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_p_ess_time">30 MINUTOS</div>
+
+              <!-- Price Box -->
+              <div class="package-price-box">
+                <div>
+                  <span class="price-val">$180</span> <span class="price-cur">USD</span>
+                </div>
+              </div>
+
+              <ul class="package-features">
+                <li data-i18n="pkg_p_ess_f1">6 imágenes digitales profesionalmente editadas</li>
+                <li data-i18n="pkg_p_ess_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
+                <li data-i18n="pkg_p_ess_f2">Sesión en estudio fotográfico profesional</li>
+                <li data-i18n="pkg_p_ess_f3">1 outfit</li>
+                <li data-i18n="pkg_p_ess_f4">Guía de poses ejecutiva</li>
+                <li data-i18n="pkg_p_ess_f5">Galería en línea privada</li>
+                <li data-i18n="pkg_p_ess_f6">Entrega máx 2 semanas</li>
+              </ul>
+            </div>
+            <a href="booking.html?service=professionals&amp;package=essential" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
           </div>
         </div>
       </div>
