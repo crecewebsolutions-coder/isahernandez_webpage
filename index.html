@@ -19,6 +19,15 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/components.css">
   <link rel="stylesheet" href="css/pages.css">
+  <!-- MailerLite Universal -->
+  <script>
+      (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+      .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+      n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+      (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+      ml('account', '2801596');
+  </script>
+  <!-- End MailerLite Universal -->
 </head>
 <body>
 
@@ -410,7 +419,7 @@
         <div style="margin: 0.6rem 0 1rem 0;">
           <span style="display: inline-flex; align-items: center; gap: 0.5rem; background: rgba(197,160,89,0.12); border: 1px solid var(--accent-gold); color: var(--text-dark); padding: 0.4rem 1.1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;">
             <i class="fa-solid fa-tag" style="color: var(--accent-gold);"></i>
-            <span data-i18n="pkg_bday_range">Rango de Inversión: $200 – $500 USD</span>
+            <span data-i18n="pkg_bday_range">Rango de Inversión: $480 – $225 USD</span>
           </span>
         </div>
         <p class="section-subtitle" data-i18n="pkg_subtitle">
@@ -418,47 +427,39 @@
         </p>
       </div>
 
+      <!-- Banner Preventa / Promoción con Fecha Límite -->
+      <div class="promo-sale-banner reveal" style="max-width: 900px; margin: 0 auto 3rem auto;">
+        <div class="promo-header-row">
+          <span class="promo-kicker"><i class="fa-solid fa-sparkles"></i> <span data-i18n="promo_bday_kicker">PREVENTA ESPECIAL DE TEMPORADA</span></span>
+          <span class="promo-deadline-pill"><i class="fa-regular fa-clock"></i> <span data-i18n="promo_bday_deadline">Tarifa Válida Agendando Antes de Fecha Límite</span></span>
+        </div>
+        <h4 class="promo-title" data-i18n="promo_bday_title">¡Asegura tu Sesión de Cumpleaños con Tarifa Especial de Preventa!</h4>
+        <p class="promo-desc" data-i18n="promo_bday_desc">
+          Agenda tu fecha con anticipación y ahorra $20 USD con tarifa especial de preventa. Pasada la fecha límite aplica el precio regular (+ $20 USD). ¡Tu fecha se reserva con solo $50 USD de anticipo!
+        </p>
+      </div>
+
+      <!-- Paquetes Ordenados de MAYOR a MENOR Precio -->
       <div class="packages-teaser-grid">
-        <!-- Golden $225 -->
+        <!-- 1. Diamond $460 (Mayor) -->
         <div class="package-card reveal delay-1">
           <div>
-            <h3 class="package-name" data-i18n="pkg_b_golden_name">Golden</h3>
-            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_golden_time">45 MINUTOS</div>
-            <ul class="package-features">
-              <li data-i18n="pkg_b_golden_f1">8 imágenes digitales profesionalmente editadas</li>
-              <li data-i18n="pkg_b_golden_f2">Galería en línea privada</li>
-              <li data-i18n="pkg_b_golden_f3">1 outfit (cambio de ropa)</li>
-              <li data-i18n="pkg_b_golden_f4">Guía de poses personalizada</li>
-              <li data-i18n="pkg_b_golden_f5">Entrega máx 2 semanas</li>
-            </ul>
-          </div>
-          <a href="booking.html?service=birthdays&amp;package=golden" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-        </div>
-
-        <!-- Platinum $290 (Featured) -->
-        <div class="package-card featured reveal delay-2">
-          <div>
-            <h3 class="package-name" data-i18n="pkg_b_plat_name">Platinum</h3>
-            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_plat_time">1 HORA</div>
-            <ul class="package-features">
-              <li data-i18n="pkg_b_plat_f1">10 imágenes digitales profesionalmente editadas</li>
-              <li data-i18n="pkg_b_plat_f2">Galería en línea privada</li>
-              <li data-i18n="pkg_b_plat_f3">2 outfits (cambios de ropa)</li>
-              <li data-i18n="pkg_b_plat_f4">Guía de poses personalizada</li>
-              <li data-i18n="pkg_b_plat_f5">Asesoría previa de fotos &amp; vestuario</li>
-              <li data-i18n="pkg_b_plat_f6">Entrega máx 1.5 semanas</li>
-            </ul>
-          </div>
-          <a href="booking.html?service=birthdays&amp;package=platinum" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
-        </div>
-
-        <!-- Diamond $460 -->
-        <div class="package-card reveal delay-3">
-          <div>
             <h3 class="package-name" data-i18n="pkg_b_diam_name">Diamond</h3>
-            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 1.5rem;" data-i18n="pkg_b_diam_time">1.5 HORAS</div>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_b_diam_time">1.5 HORAS</div>
+
+            <!-- Price Box with Early Booking / Preventa Special -->
+            <div class="package-price-box promo-active">
+              <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+              <div>
+                <span class="price-val">$460</span> <span class="price-cur">USD</span>
+                <span class="price-strike">$480 USD</span>
+              </div>
+              <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+            </div>
+
             <ul class="package-features">
               <li data-i18n="pkg_b_diam_f1">12 imágenes digitales profesionalmente editadas + 3 B&amp;W adicionales</li>
+              <li data-i18n="pkg_b_diam_f_backdrop"><strong>2 fondos</strong> de estudio profesionales</li>
               <li data-i18n="pkg_b_diam_f2">Galería en línea privada</li>
               <li data-i18n="pkg_b_diam_f3">2 outfits (cambios de ropa)</li>
               <li data-i18n="pkg_b_diam_f4">Guía de poses personalizada</li>
@@ -469,6 +470,63 @@
             </ul>
           </div>
           <a href="booking.html?service=birthdays&amp;package=diamond" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+
+        <!-- 2. Platinum $290 (Featured / Más Popular) -->
+        <div class="package-card featured reveal delay-2">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_b_plat_name">Platinum</h3>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_b_plat_time">1 HORA</div>
+
+            <!-- Price Box with Early Booking / Preventa Special -->
+            <div class="package-price-box promo-active">
+              <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+              <div>
+                <span class="price-val">$290</span> <span class="price-cur">USD</span>
+                <span class="price-strike">$310 USD</span>
+              </div>
+              <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+            </div>
+
+            <ul class="package-features">
+              <li data-i18n="pkg_b_plat_f1">10 imágenes digitales profesionalmente editadas</li>
+              <li data-i18n="pkg_b_plat_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
+              <li data-i18n="pkg_b_plat_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_b_plat_f3">2 outfits (cambios de ropa)</li>
+              <li data-i18n="pkg_b_plat_f4">Guía de poses personalizada</li>
+              <li data-i18n="pkg_b_plat_f5">Asesoría previa de fotos &amp; vestuario</li>
+              <li data-i18n="pkg_b_plat_f6">Entrega máx 1.5 semanas</li>
+            </ul>
+          </div>
+          <a href="booking.html?service=birthdays&amp;package=platinum" class="btn btn-primary btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
+        </div>
+
+        <!-- 3. Golden $225 (Menor) -->
+        <div class="package-card reveal delay-3">
+          <div>
+            <h3 class="package-name" data-i18n="pkg_b_golden_name">Golden</h3>
+            <div style="font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-terracotta); margin-bottom: 0.8rem;" data-i18n="pkg_b_golden_time">45 MINUTOS</div>
+
+            <!-- Price Box with Early Booking / Preventa Special -->
+            <div class="package-price-box promo-active">
+              <div class="promo-badge-tag"><i class="fa-solid fa-tag"></i> <span data-i18n="promo_badge_preventa">PREVENTA ESPECIAL</span></div>
+              <div>
+                <span class="price-val">$225</span> <span class="price-cur">USD</span>
+                <span class="price-strike">$245 USD</span>
+              </div>
+              <div class="promo-deadline-note"><i class="fa-regular fa-calendar-check"></i> <span data-i18n="promo_note_deadline">Ahorra $20 USD si agendas antes de fecha límite</span></div>
+            </div>
+
+            <ul class="package-features">
+              <li data-i18n="pkg_b_golden_f1">8 imágenes digitales profesionalmente editadas</li>
+              <li data-i18n="pkg_b_golden_f_backdrop"><strong>1 fondo</strong> de estudio profesional</li>
+              <li data-i18n="pkg_b_golden_f2">Galería en línea privada</li>
+              <li data-i18n="pkg_b_golden_f3">1 outfit (cambio de ropa)</li>
+              <li data-i18n="pkg_b_golden_f4">Guía de poses personalizada</li>
+              <li data-i18n="pkg_b_golden_f5">Entrega máx 2 semanas</li>
+            </ul>
+          </div>
+          <a href="booking.html?service=birthdays&amp;package=golden" class="btn btn-outline btn-block" data-i18n="btn_book_package">RESERVAR ESTE PAQUETE</a>
         </div>
       </div>
 
@@ -892,5 +950,3 @@
   <script src="js/portfolio.js"></script>
 </body>
 </html>
-
-
